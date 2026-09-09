@@ -1,0 +1,115 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-04 17:19:21 -0300 
+
+Exportando tabelas e figuras depois da auditoria dos modelos.
+- The project is out-of-sync -- use `]8;;x-r-run:renv::status()renv::status()]8;;` for details.
+
+Anexando pacote: 'arrow'
+
+O seguinte objeto é mascarado por 'package:utils':
+
+    timestamp
+
+here() starts at D:/R - Projetos/tourism-gravity/r-project
+
+Anexando pacote: 'janitor'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    chisq.test, fisher.test
+
+
+Anexando pacote: 'lubridate'
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    duration
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    date, intersect, setdiff, union
+
+
+Anexando pacote: 'rlang'
+
+Os seguintes objetos são mascarados por 'package:jsonlite':
+
+    flatten, unbox
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    string
+
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+O seguinte objeto é mascarado por 'package:fixest':
+
+    pvalue
+
+
+Anexando pacote: 'dplyr'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    filter, lag
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Anexando pacote: 'purrr'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    discard
+
+Os seguintes objetos são mascarados por 'package:rlang':
+
+    flatten, flatten_chr, flatten_dbl, flatten_int, flatten_lgl, flatten_raw, invoke, splice
+
+O seguinte objeto é mascarado por 'package:jsonlite':
+
+    flatten
+
+
+Anexando pacote: 'zoo'
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    as.Date, as.Date.numeric
+
++ model_files dispatched
+✔ model_files completed [14.5s, 728.03 kB]
+✔ ended pipeline [25.3s, 1 completed, 15 skipped]
+Houve 24 avisos (use warnings() para vê-los)
+
+ARQUIVOS EXPORTADOS
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/main_models.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/main_models.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/robustness_models.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/robustness_models.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/robustness_prices_connectivity.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/robustness_frequency_modes.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/functional_form_and_regime_tests.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/functional_form_and_regime_tests.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/gravity_distance_models.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/inference_sensitivity.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/coefficient_estimates.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/model_specifications.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/direct_service_marginal_effects.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/main_coefficient_plot.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/main_coefficient_plot.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/connectivity_capacity_plot.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/connectivity_capacity_plot.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/direct_service_marginal_effect_plot.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/direct_service_marginal_effect_plot.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/article_results_dashboard.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/article_results_dashboard.png 
+
+Fim: 2026-09-04 17:19:51 -0300 

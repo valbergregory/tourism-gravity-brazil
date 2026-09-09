@@ -1,0 +1,120 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-03 12:40:58 -0300 
+
+Construindo o alvo panels com conectividade ANAC ativada...
+Os alvos válidos serão reaproveitados pelo targets.
+
+
+Anexando pacote: 'arrow'
+
+O seguinte objeto é mascarado por 'package:utils':
+
+    timestamp
+
+here() starts at D:/R - Projetos/tourism-gravity/r-project
+
+Anexando pacote: 'janitor'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    chisq.test, fisher.test
+
+
+Anexando pacote: 'lubridate'
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    duration
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    date, intersect, setdiff, union
+
+
+Anexando pacote: 'rlang'
+
+Os seguintes objetos são mascarados por 'package:jsonlite':
+
+    flatten, unbox
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    string
+
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+O seguinte objeto é mascarado por 'package:fixest':
+
+    pvalue
+
+
+Anexando pacote: 'dplyr'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    filter, lag
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Anexando pacote: 'purrr'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    discard
+
+Os seguintes objetos são mascarados por 'package:rlang':
+
+    flatten, flatten_chr, flatten_dbl, flatten_int, flatten_lgl, flatten_raw, invoke, splice
+
+O seguinte objeto é mascarado por 'package:jsonlite':
+
+    flatten
+
+
+Anexando pacote: 'zoo'
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    as.Date, as.Date.numeric
+
++ panels dispatched
+✔ panels completed [2.9s, 3.66 MB]
+✔ ended pipeline [9s, 1 completed, 8 skipped]
+Houve 21 avisos (use warnings() para vê-los)
+RESUMO DA INTEGRAÇÃO ANAC–MTUR
+# A tibble: 9 × 2
+  indicator                    value
+  <chr>                        <dbl>
+1 panel_total_rows         21752    
+2 panel_access_rows        82708    
+3 anac_rows                11730    
+4 anac_origins               118    
+5 anac_months                312    
+6 connected_panel_origins     80    
+7 direct_air_arrival_share     0.898
+8 duplicate_total_keys         0    
+9 invalid_total_rows           0    
+
+COBERTURA DAS CHEGADAS AÉREAS
+# A tibble: 1 × 7
+  air_arrivals direct_air_arrivals direct_arrival_share air_market_months
+         <dbl>               <dbl>                <dbl>             <int>
+1     92068625            82669643                0.898             21743
+  direct_market_months origins origins_ever_direct
+                 <int>   <int>               <int>
+1                 9677     199                  80
+
+Origens ANAC sem correspondência no MTur: 8 
+Origens MTur sem ligação direta observada: 119 
+
+INTEGRAÇÃO ANAC–MTUR APROVADA
+
+Fim: 2026-09-03 12:41:12 -0300 

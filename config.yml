@@ -1,0 +1,58 @@
+project:
+  title: "Distance, Connectivity, and Price Competitiveness"
+  seed: 20260830
+  start_year: 2000
+  end_year: 2025
+  covid_start: "2020-03-01"
+  covid_end: "2021-12-01"
+  base_cpi_year: 2015
+  min_origin_years: 5
+  main_destination_iso3: "BRA"
+
+paths:
+  mtur_raw: "data/raw/mtur"
+  anac_raw: "data/raw/anac"
+  cepii_raw: "data/raw/cepii"
+  visa_raw: "data/raw/visa"
+  structural_raw: "data/raw/structural"
+  interim: "data/interim"
+  processed: "data/processed"
+  audit: "output/audit"
+  figures: "output/figures"
+  tables: "output/tables"
+
+econometrics:
+  main_sample_flag: "sample_broad_5y"
+  balanced_sample_flag: "sample_core_2000"
+  main_price: "log_relative_price_gdp_pli"
+  main_distance: "distw"
+  # Recalibrate after removing completed country-month cells that were not
+  # observed in the MTur source. scripts/06_recalibrar_contrato_amostra.R
+  # prints the candidate values; replace null with those values and rerun it.
+  expected_main_rows: 19108
+  expected_main_origins: 87
+  excluded_distw_origins:
+    - MAC
+  dominant_market_count: 5
+  strict_sample_contract: true
+
+data_options:
+  download_mtur: true
+  download_cepii: true
+  use_connectivity: true
+  use_visa: false
+  use_structural_extension: false
+  keep_unknown_origins: false
+  create_zero_flows: true
+  main_access_mode: "all"
+  min_positive_arrivals: 1
+
+competitor_destinations:
+  - ARG
+  - CHL
+  - COL
+  - CRI
+  - DOM
+  - MEX
+  - PER
+  - URY

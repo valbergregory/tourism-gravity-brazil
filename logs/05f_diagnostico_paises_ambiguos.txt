@@ -1,0 +1,32 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-02 02:02:43 +0000 
+
+Meses que serão examinados: 200003, 200012, 200102, 201007, 201201, 201904, 201910 
+
+Lendo 200003 ...
+Unziping and reading data to memory.
+Lendo 200012 ...
+Unziping and reading data to memory.
+Lendo 200102 ...
+Unziping and reading data to memory.
+Lendo 201007 ...
+Unziping and reading data to memory.
+Lendo 201201 ...
+Unziping and reading data to memory.
+Lendo 201904 ...
+Unziping and reading data to memory.
+Lendo 201910 ...
+Unziping and reading data to memory.
+# A tibble: 2 × 11
+  foreign_country      foreign_iata foreign_icao foreign_airport                        foreign_city     months
+  <chr>                <chr>        <chr>        <chr>                                  <chr>             <int>
+1 ILHA DE SÃO MARTINHO SXM          TNCM         PRINCESS JULIANA INTERNATIONAL AIRPORT PHILIPSBURG           4
+2 NÃO IDENTIFICADO     N/I          N/I          NÃO IDENTIFICADO                       NÃO IDENTIFICADO      5
+  first_month last_month records seats passengers
+        <int>      <int>   <int> <dbl>      <dbl>
+1      200012     201201      15  2384       1054
+2      200003     201910       7  1049        822
+
+DIAGNÓSTICO DOS PAÍSES AMBÍGUOS CONCLUÍDO
+
+Fim: 2026-09-02 02:03:26 +0000 

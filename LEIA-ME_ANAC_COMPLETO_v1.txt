@@ -1,0 +1,89 @@
+MÓDULO ANAC COMPLETO — VERSÃO 1.1 — 2000-01 A 2025-12
+
+CORREÇÃO DO DICIONÁRIO DE PAÍSES
+- Adiciona 26 correspondências verificadas entre rótulos de países/territórios
+  da ANAC e códigos ISO3.
+- Identifica ILHA DE SÃO MARTINHO como Sint Maarten (SXM), confirmado pelo
+  aeroporto SXM/TNCM — Princess Juliana International Airport.
+- Não atribui artificialmente um país a NÃO IDENTIFICADO.
+- Exclui esses raros registros sem identificação geográfica da base analítica e
+  os preserva em output/audit/anac_excluded_unknown_months.
+- Gera o resumo auditável output/audit/anac_excluded_unknown_summary.csv.
+- Ao executar novamente o script, os 177 checkpoints já válidos são reutilizados;
+  somente os meses pendentes são processados.
+
+CONTEÚDO
+- R/anac_download_helpers.R
+- scripts/05d_baixar_anac_completo.R
+- scripts/05e_auditar_anac_completo.R
+
+INSTALAÇÃO
+1. Extraia este ZIP diretamente na raiz:
+   D:/R - Projetos/tourism-gravity/r-project
+
+2. Confirme os três arquivos acima.
+
+3. Não altere config.yml. use_connectivity e use_visa devem continuar false.
+
+DOWNLOAD COMPLETO
+4. Abra scripts/05d_baixar_anac_completo.R.
+
+5. Execute como Background Job.
+   Working Directory: D:/R - Projetos/tourism-gravity/r-project
+   Copy job results: (Don't copy)
+
+6. Não execute outro script ANAC ou targets ao mesmo tempo.
+
+7. O processo poderá demorar várias horas e usar vários gigabytes de download.
+   Mantenha o RStudio e a conexão abertos.
+
+8. Para acompanhar sem interromper, use no Console:
+
+   length(list.files(
+     "data/interim/anac_monthly_chunks",
+     pattern = "^anac_[0-9]{6}\\.csv$"
+   ))
+
+   tail(
+     readLines(
+       "logs/05d_download_anac_completo.txt",
+       warn = FALSE,
+       encoding = "UTF-8"
+     ),
+     20
+   )
+
+9. Se houver interrupção ou erro, execute o mesmo script novamente. Os meses
+   concluídos serão reconhecidos como checkpoints e não serão baixados outra vez.
+
+10. Ao final, o log deve mostrar:
+    DOWNLOAD E CONSOLIDAÇÃO ANAC CONCLUÍDOS
+    Meses: 312
+
+AUDITORIA
+11. Somente depois do download completo, abra
+    scripts/05e_auditar_anac_completo.R e execute como Background Job com o
+    mesmo Working Directory e (Don't copy).
+
+12. Depois execute no Console:
+
+    tail(
+      readLines(
+        "logs/05e_auditoria_anac_completo.txt",
+        warn = FALSE,
+        encoding = "UTF-8"
+      ),
+      180
+    )
+
+13. Envie o resultado. Não ative use_connectivity antes da aprovação final.
+
+SEGURANÇA E REPRODUTIBILIDADE
+- O CSV vazio só é substituído quando os 312 meses estiverem válidos.
+- Cada mês é salvo separadamente.
+- Registros fora do mês de referência são excluídos.
+- Países reconhecíveis sem ISO3 impedem a consolidação final e são registrados
+  em output/audit; registros NÃO IDENTIFICADOS são excluídos e auditados sem
+  bloquear a consolidação.
+- As variáveis principais de capacidade usam voos de entrada no Brasil.
+- Voos e assentos de saída são preservados para auditoria e robustez.

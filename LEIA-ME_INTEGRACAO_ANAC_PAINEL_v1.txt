@@ -1,0 +1,53 @@
+INTEGRAÇÃO ANAC–PAINEL — VERSÃO 1
+
+OBJETIVO
+Preservar na base econométrica a conectividade aérea completa: ligação direta,
+voos, assentos, passageiros, ASK, RPK, fluxos de entrada e saída, defasagens de
+1, 3, 6 e 12 meses e médias móveis dos três meses anteriores.
+
+ARQUIVOS
+- R/05_prepare_connectivity.R
+- R/07_build_panel.R
+- scripts/06_integrar_anac_painel.R
+
+INSTALAÇÃO
+1. Extraia o ZIP diretamente em:
+   D:/R - Projetos/tourism-gravity/r-project
+2. Substitua os arquivos existentes.
+3. Não apague data/raw/anac, data/interim, _targets nem output/audit.
+
+ATIVAÇÃO
+4. Em config.yml, altere somente:
+   use_connectivity: false
+   para:
+   use_connectivity: true
+5. Mantenha use_visa: false.
+
+EXECUÇÃO
+6. Abra scripts/06_integrar_anac_painel.R.
+7. Execute como Background Job.
+8. Working Directory:
+   D:/R - Projetos/tourism-gravity/r-project
+9. Copy job results: (Don't copy).
+10. Não execute outro pipeline targets ao mesmo tempo.
+
+RESULTADO ESPERADO
+- conectividade com 312 meses;
+- painel total com 21.752 linhas;
+- painel modal com 82.708 linhas;
+- chaves duplicadas: 0;
+- linhas inválidas: 0;
+- cobertura de chegadas aéreas diretas próxima da auditoria ANAC (89,8%);
+- mensagem final: INTEGRAÇÃO ANAC–MTUR APROVADA.
+
+LOG
+logs/06_integracao_anac_painel.txt
+
+AUDITORIAS PRODUZIDAS
+- output/audit/connectivity_panel_integration_summary.csv
+- output/audit/anac_origins_without_mtur.csv
+- output/audit/mtur_origins_never_direct.csv
+
+IMPORTANTE
+Esta etapa integra e audita os dados. Ela ainda não executa os modelos
+econométricos.

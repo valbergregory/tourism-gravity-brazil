@@ -1,0 +1,146 @@
+# .gitignore — tourism-gravity (raiz do repositório Git = r-project/)
+#
+# Objetivo: ignorar somente caches, bibliotecas locais, segredos e temporários.
+# PERMANECEM versionados: _targets.R, renv.lock, renv/activate.R,
+# renv/settings.json, tourism-gravity.Rproj, .Rprofile, config.yml, R/,
+# scripts/, logs/*.txt (relatórios de execução/auditoria), data/raw/,
+# data/interim/*.csv|*.parquet, data/processed/, output/audit/,
+# output/figures/, output/tables/ e os arquivos .md/.txt de documentação.
+
+## ---------------------------------------------------------------------
+## R / RStudio — arquivos locais de sessão
+## (o arquivo tourism-gravity.Rproj NÃO é ignorado)
+## ---------------------------------------------------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.httr-oauth
+*.Rcheck/
+
+## ---------------------------------------------------------------------
+## {targets} — store do pipeline (reproduzível com targets::tar_make())
+## _targets.R continua versionado; apenas a pasta _targets/ é ignorada.
+## ---------------------------------------------------------------------
+_targets/
+
+## ---------------------------------------------------------------------
+## renv — biblioteca local e temporários
+## renv.lock, renv/activate.R e renv/settings.json continuam versionados.
+## ---------------------------------------------------------------------
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+
+## ---------------------------------------------------------------------
+## Variáveis de ambiente, credenciais e segredos
+## ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.Renviron
+.Renviron.*
+*.pem
+*.p12
+*.pfx
+*.key
+credentials*.json
+service-account*.json
+secrets.*
+token*.json
+
+## ---------------------------------------------------------------------
+## Logs e temporários do sistema
+## (os relatórios em logs/*.txt NÃO são afetados: a extensão é .txt)
+## ---------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+## ---------------------------------------------------------------------
+## LaTeX — apenas intermediários de compilação
+## (.tex, .bib, .pdf, .png, .svg finais NÃO são ignorados)
+## ---------------------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.run.xml
+*.bcf
+*.nav
+*.snm
+*.vrb
+
+## ---------------------------------------------------------------------
+## Pastas temporárias de resultados (regras preventivas; hoje não existem)
+## Nunca ignorar output/, output/tables/, output/figures/ ou output/audit/.
+## ---------------------------------------------------------------------
+output/tmp/
+output/temp/
+output/cache/
+output/logs/
+output/intermediate/
+
+## ---------------------------------------------------------------------
+## Dados brutos e intermediários — mantêm-se fisicamente no computador,
+## mas NÃO vão para o repositório público:
+##  - data/raw/     (~63 MB) fontes que o pipeline baixa novamente
+##                  (MTur, ANAC, CEPII, visa, structural);
+##  - data/interim/ arquivos intermediários reproduzíveis, inclusive os
+##                  312 checkpoints mensais de data/interim/anac_monthly_chunks/.
+## data/processed/*.parquet (painéis e amostra congelada) PERMANECE versionado.
+## Exceções: README.md e LEIA-ME.md em qualquer nível dessas pastas
+## (documentação de proveniência, p. ex. data/raw/mtur/LEIA-ME.md).
+## ---------------------------------------------------------------------
+## Estrutura: ignora tudo, reabre os diretórios (necessário para que as
+## exceções abaixo funcionem) e libera apenas README.md e LEIA-ME.md em
+## qualquer nível. CSV, parquet, XLSX, ZIP e demais dados seguem ignorados.
+data/raw/**
+!data/raw/**/
+!data/raw/**/README.md
+!data/raw/**/LEIA-ME.md
+
+data/interim/**
+!data/interim/**/
+!data/interim/**/README.md
+!data/interim/**/LEIA-ME.md
+
+## ---------------------------------------------------------------------
+## Pacotes .zip em output/ — duplicam resultados já versionados em
+## output/tables/, output/figures/ e output/audit/.
+## ---------------------------------------------------------------------
+output/*.zip
+
+# --- Texto do artigo (local; nao versionado). Publicar apenas o PDF final em artigo/ ---
+overleaf/
+article/
+anpec/
+paper*/
+outputs/overleaf/
+*.tex
+*.bib
+*.pdf
+*.docx
+*.qmd
+CLAUDE.md
+.claude/
+!artigo/*.pdf

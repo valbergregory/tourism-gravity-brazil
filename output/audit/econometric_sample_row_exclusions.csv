@@ -1,0 +1,10 @@
+criterion,rows
+panel_rows,21752
+outside_named_sample,1244
+excluded_distw_origin,0
+completed_cells_not_observed,557
+invalid_or_missing_arrivals,0
+missing_income_or_population,447
+missing_gdp_pli,396
+missing_distw,0
+frozen_rows,19108

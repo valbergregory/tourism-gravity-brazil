@@ -1,0 +1,75 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-02 00:32:22 +0000 
+
+
+Baixando e processando: 200001 
+Unziping and reading data to memory.
+Linhas brutas: 71023 
+Linhas internacionais antes do filtro mensal: 6152 
+Registros internacionais fora do mês ou sem data: 38 
+Linhas país-direção após agregação: 59 
+Países estrangeiros: 30 
+Códigos ISO3 identificados: 30 
+Linhas agregadas sem código ISO3: 0 
+
+Baixando e processando: 202501 
+Unziping and reading data to memory.
+Linhas brutas: 86361 
+Linhas internacionais antes do filtro mensal: 14869 
+Registros internacionais fora do mês ou sem data: 19 
+Linhas país-direção após agregação: 82 
+Países estrangeiros: 45 
+Códigos ISO3 identificados: 44 
+Linhas agregadas sem código ISO3: 0 
+
+PAÍSES SEM CORRESPONDÊNCIA ISO3
+# A tibble: 0 × 1
+# ℹ 1 variable: foreign_country <chr>
+
+RESUMO CORRIGIDO POR MÊS E DIREÇÃO
+# A tibble: 4 × 6
+  date       direction countries flights   seats passengers
+  <date>     <chr>         <int>   <dbl>   <dbl>      <dbl>
+1 2000-01-01 inbound          30    3035  563050     376937
+2 2000-01-01 outbound         29    3079  572352     401634
+3 2025-01-01 inbound          41    7414 1617391    1409106
+4 2025-01-01 outbound         40    7418 1616894    1363670
+
+PRINCIPAIS MERCADOS DE ENTRADA
+# A tibble: 30 × 7
+   origin_iso3 foreign_country           date       direction flights  seats passengers
+   <chr>       <chr>                     <date>     <chr>       <dbl>  <dbl>      <dbl>
+ 1 USA         ESTADOS UNIDOS DA AMÉRICA 2000-01-01 inbound       769 166942     100036
+ 2 ARG         ARGENTINA                 2000-01-01 inbound       864 127279      93978
+ 3 ESP         ESPANHA                   2000-01-01 inbound       143  33799      19178
+ 4 FRA         FRANÇA                    2000-01-01 inbound       105  26555      18157
+ 5 PRT         PORTUGAL                  2000-01-01 inbound       119  26092      14714
+ 6 CHL         CHILE                     2000-01-01 inbound       149  26081      20546
+ 7 DEU         ALEMANHA                  2000-01-01 inbound        88  24266      17947
+ 8 URY         URUGUAI                   2000-01-01 inbound       190  21730      17838
+ 9 GBR         REINO UNIDO               2000-01-01 inbound        52  17212      11397
+10 ITA         ITÁLIA                    2000-01-01 inbound        73  16049      11450
+11 PRY         PARAGUAI                  2000-01-01 inbound       101  14382       8806
+12 CHE         SUÍÇA                     2000-01-01 inbound        42  10780       8470
+13 BOL         BOLÍVIA                   2000-01-01 inbound        66   8875       7221
+14 NLD         HOLANDA                   2000-01-01 inbound        25   7513       6288
+15 MEX         MÉXICO                    2000-01-01 inbound        29   5321       3529
+16 ARG         ARGENTINA                 2025-01-01 inbound      1743 330380     304165
+17 USA         ESTADOS UNIDOS DA AMÉRICA 2025-01-01 inbound      1273 268423     231118
+18 CHL         CHILE                     2025-01-01 inbound      1041 217426     190639
+19 PRT         PORTUGAL                  2025-01-01 inbound       500 141106     115556
+20 PAN         PANAMÁ                    2025-01-01 inbound       405  68382      56980
+21 FRA         FRANÇA                    2025-01-01 inbound       203  63494      56089
+22 ESP         ESPANHA                   2025-01-01 inbound       187  58117      51820
+23 ITA         ITÁLIA                    2025-01-01 inbound       146  54228      42453
+24 URY         URUGUAI                   2025-01-01 inbound       272  50597      43921
+25 COL         COLÔMBIA                  2025-01-01 inbound       247  45990      36650
+26 PER         PERU                      2025-01-01 inbound       220  41339      37344
+27 GBR         REINO UNIDO               2025-01-01 inbound       106  36016      32297
+28 DEU         ALEMANHA                  2025-01-01 inbound       112  34546      30721
+29 ARE         EMIRADOS ÁRABES UNIDOS    2025-01-01 inbound        53  22794      20077
+30 NLD         HOLANDA                   2025-01-01 inbound        61  20360      17740
+
+VALIDAÇÃO ANAC CORRIGIDA E APROVADA
+
+Fim: 2026-09-02 00:32:37 +0000 

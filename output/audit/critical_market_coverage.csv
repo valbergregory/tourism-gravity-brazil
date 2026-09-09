@@ -1,0 +1,5 @@
+origin_iso3,total_arrivals,rows,baseline_complete_rows,gdp_pli_price_complete_rows,cpi_price_complete_rows,pli_price_complete_rows,cpi_interpolated_rows,cpi_proxy_rows,fx_proxy_rows,price_level_proxy_rows,price_level_gdp_proxy_rows,price_proxy_iso3c
+ARG,39389597,312,312,312,0,132,0,0,0,0,0,NA
+VEN,1304061,312,312,156,108,48,0,0,0,0,0,NA
+GUF,195971,312,0,0,0,0,0,312,312,312,312,FRA
+PRI,21886,312,312,312,312,312,0,312,0,180,0,USA

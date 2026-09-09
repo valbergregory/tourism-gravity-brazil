@@ -1,0 +1,139 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-04 17:22:00 -0300 
+
+Gerando testes, tabelas e figuras adicionais.
+ A análise leave-one-origin-out reestima 87 modelos e pode demorar.
+- The project is out-of-sync -- use `]8;;x-r-run:renv::status()renv::status()]8;;` for details.
+
+Anexando pacote: 'arrow'
+
+O seguinte objeto é mascarado por 'package:utils':
+
+    timestamp
+
+here() starts at D:/R - Projetos/tourism-gravity/r-project
+
+Anexando pacote: 'janitor'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    chisq.test, fisher.test
+
+
+Anexando pacote: 'lubridate'
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    duration
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    date, intersect, setdiff, union
+
+
+Anexando pacote: 'rlang'
+
+Os seguintes objetos são mascarados por 'package:jsonlite':
+
+    flatten, unbox
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    string
+
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+O seguinte objeto é mascarado por 'package:fixest':
+
+    pvalue
+
+
+Anexando pacote: 'dplyr'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    filter, lag
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Anexando pacote: 'purrr'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    discard
+
+Os seguintes objetos são mascarados por 'package:rlang':
+
+    flatten, flatten_chr, flatten_dbl, flatten_int, flatten_lgl, flatten_raw, invoke, splice
+
+O seguinte objeto é mascarado por 'package:jsonlite':
+
+    flatten
+
+
+Anexando pacote: 'zoo'
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    as.Date, as.Date.numeric
+
++ origin_influence dispatched
+✔ origin_influence completed [3.8s, 5.70 kB]
++ diagnostic_files dispatched
+✔ diagnostic_files completed [6.1s, 952.83 kB]
+✔ ended pipeline [21.6s, 2 completed, 15 skipped]
+Houve 25 avisos (use warnings() para vê-los)
+
+VALIDAÇÃO FINAL
+ - 12 testes formais, incluindo duas inclinações totais pós-reabertura.
+ - tabela de ajuste sem colunas vazias.
+ - todos os produtos diagnósticos existem.
+
+DIAGNÓSTICOS E FIGURAS EXPORTADOS
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/publication_main_models.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/publication_main_models.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/publication_robustness_models.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/publication_robustness_models.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/descriptive_statistics.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/descriptive_statistics.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/descriptive_statistics.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/formal_specification_tests.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/formal_specification_tests.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/formal_specification_tests.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/model_fit_diagnostics.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/model_fit_diagnostics.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/model_fit_diagnostics.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/economic_magnitudes.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/economic_magnitudes.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/economic_magnitudes.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/market_concentration_top20.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/market_concentration_top20.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/market_concentration_top20.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/origin_leave_one_out_influence.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/origin_leave_one_out_influence.html
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/origin_leave_one_out_influence.tex
+- D:/R - Projetos/tourism-gravity/r-project/output/tables/combined_model_calibration.csv
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/tourism_demand_timeline.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/tourism_demand_timeline.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/market_concentration_top15.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/market_concentration_top15.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/relative_price_trend.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/relative_price_trend.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/distance_arrivals_scatter.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/distance_arrivals_scatter.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/combined_model_calibration.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/combined_model_calibration.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/origin_leave_one_out_influence.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/origin_leave_one_out_influence.png
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/zero_flow_heatmap_top20.pdf
+- D:/R - Projetos/tourism-gravity/r-project/output/figures/zero_flow_heatmap_top20.png 
+
+Fim: 2026-09-04 17:22:26 -0300 

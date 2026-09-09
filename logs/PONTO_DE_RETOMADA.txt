@@ -1,0 +1,17 @@
+Checkpoint criado em: 2026-09-01 00:30:16.558196
+
+Projeto: D:/R - Projetos/tourism-gravity/r-project
+
+Estado confirmado:
+- MTur limpo e auditado: 82.708 linhas e 199 origens.
+- Período: janeiro de 2000 a dezembro de 2025.
+- GeoDist preparado para 189 das 199 origens.
+- Painel inicial construído e auditado.
+- Detectado problema crítico de cobertura de preços para a Argentina.
+- Correção macroeconômica e de preços preparada.
+
+Próxima etapa:
+1. Verificar se scripts/03_construir_painel.R terminou.
+2. Se terminou, executar source('scripts/04_auditar_painel.R').
+3. Avaliar principalmente ARG, GUF, PRI e VEN.
+4. Não executar ainda os modelos econométricos.

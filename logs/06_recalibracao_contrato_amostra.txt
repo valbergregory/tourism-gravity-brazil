@@ -1,0 +1,199 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-04 16:49:44 -0300 
+
+Reconstruindo a cobertura observada e recalibrando o contrato.
+Execute este script como um único Background Job.
+
+- The project is out-of-sync -- use `]8;;x-r-run:renv::status()renv::status()]8;;` for details.
+
+Anexando pacote: 'arrow'
+
+O seguinte objeto é mascarado por 'package:utils':
+
+    timestamp
+
+here() starts at D:/R - Projetos/tourism-gravity/r-project
+
+Anexando pacote: 'janitor'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    chisq.test, fisher.test
+
+
+Anexando pacote: 'lubridate'
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    duration
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    date, intersect, setdiff, union
+
+
+Anexando pacote: 'rlang'
+
+Os seguintes objetos são mascarados por 'package:jsonlite':
+
+    flatten, unbox
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    string
+
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+O seguinte objeto é mascarado por 'package:fixest':
+
+    pvalue
+
+
+Anexando pacote: 'dplyr'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    filter, lag
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Anexando pacote: 'purrr'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    discard
+
+Os seguintes objetos são mascarados por 'package:rlang':
+
+    flatten, flatten_chr, flatten_dbl, flatten_int, flatten_lgl, flatten_raw, invoke, splice
+
+O seguinte objeto é mascarado por 'package:jsonlite':
+
+    flatten
+
+
+Anexando pacote: 'zoo'
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    as.Date, as.Date.numeric
+
+✔ skipped pipeline [561ms, 11 skipped]
+Houve 22 avisos (use warnings() para vê-los)
+
+PROVENIÊNCIA DO PAINEL
+# A tibble: 3 × 3
+  observation_status             rows  share
+  <chr>                         <int>  <dbl>
+1 fully_observed_cell           18968 0.872 
+2 observed_with_completed_modes  2121 0.0975
+3 unobserved_completed_cell       663 0.0305
+
+CANDIDATO AO NOVO CONTRATO
+# A tibble: 1 × 15
+  sample_flag     price_measure              distance_measure  rows origins
+  <chr>           <chr>                      <chr>            <int>   <int>
+1 sample_broad_5y log_relative_price_gdp_pli distw            19108      87
+  first_date last_date  zero_rows zero_share  arrivals
+  <date>     <date>         <int>      <dbl>     <dbl>
+1 2000-01-01 2025-12-01       144    0.00754 134240120
+  full_panel_arrival_coverage expected_rows expected_origins contract_configured
+                        <dbl>         <int>            <int> <lgl>              
+1                       0.992         19108               87 TRUE               
+  contract_ok
+  <lgl>      
+1 TRUE       
+
+ORIGENS COM MESES COMPLETADOS NÃO OBSERVADOS
+# A tibble: 37 × 4
+   origin_iso3 first_completed_date last_completed_date
+   <chr>       <date>               <date>             
+ 1 PRI         2007-01-01           2025-11-01         
+ 2 IRQ         2007-01-01           2024-12-01         
+ 3 SAU         2007-01-01           2014-12-01         
+ 4 GUF         2023-01-01           2025-11-01         
+ 5 KIR         2025-05-01           2025-10-01         
+ 6 NRU         2025-05-01           2025-10-01         
+ 7 TCD         2025-02-01           2025-09-01         
+ 8 DJI         2025-05-01           2025-10-01         
+ 9 ERI         2025-02-01           2025-10-01         
+10 FSM         2025-06-01           2025-10-01         
+11 PLW         2025-06-01           2025-10-01         
+12 TON         2025-05-01           2025-10-01         
+13 BRN         2025-04-01           2025-10-01         
+14 PRK         2025-06-01           2025-09-01         
+15 SYC         2025-02-01           2025-09-01         
+16 TJK         2025-04-01           2025-10-01         
+17 TKM         2025-04-01           2025-10-01         
+18 TUV         2025-06-01           2025-09-01         
+19 VAT         2025-06-01           2025-09-01         
+20 VUT         2025-04-01           2025-08-01         
+21 WSM         2025-03-01           2025-08-01         
+22 COM         2025-06-01           2025-09-01         
+23 GNQ         2025-03-01           2025-10-01         
+24 SLB         2025-05-01           2025-09-01         
+25 SSD         2025-03-01           2025-08-01         
+26 LAO         2025-04-01           2025-06-01         
+27 MDV         2025-06-01           2025-08-01         
+28 PNG         2025-05-01           2025-08-01         
+29 BDI         2025-06-01           2025-06-01         
+30 BTN         2025-06-01           2025-06-01         
+31 CAF         2025-02-01           2025-02-01         
+32 KGZ         2025-10-01           2025-10-01         
+33 LBR         2025-02-01           2025-02-01         
+34 LSO         2025-05-01           2025-05-01         
+35 NER         2025-07-01           2025-07-01         
+36 SMR         2025-02-01           2025-02-01         
+37 SOM         2025-06-01           2025-06-01         
+   completed_unobserved_months
+                         <int>
+ 1                         224
+ 2                         216
+ 3                          96
+ 4                          21
+ 5                           6
+ 6                           6
+ 7                           6
+ 8                           5
+ 9                           5
+10                           5
+11                           5
+12                           5
+13                           4
+14                           4
+15                           4
+16                           4
+17                           4
+18                           4
+19                           4
+20                           4
+21                           4
+22                           3
+23                           3
+24                           3
+25                           3
+26                           2
+27                           2
+28                           2
+29                           1
+30                           1
+31                           1
+32                           1
+33                           1
+34                           1
+35                           1
+36                           1
+37                           1
+
+CONTRATO VALIDADO
+A amostra corrigida pode agora ser congelada e estimada por scripts/07_estimar_modelos.R.
+
+Fim: 2026-09-04 16:49:51 -0300 

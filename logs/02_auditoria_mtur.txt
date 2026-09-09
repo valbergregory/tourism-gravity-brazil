@@ -1,0 +1,30 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-08-31 22:18:12 -0300 
+
+# A tibble: 11 × 2
+   indicator                 value                       
+   <chr>                     <chr>                       
+ 1 rows                      82708                       
+ 2 origins                   199                         
+ 3 first_date                2000-01-01                  
+ 4 last_date                 2025-12-01                  
+ 5 modes                     air, fluvial, land, maritime
+ 6 observed_records          78221                       
+ 7 zero_imputed              4487                        
+ 8 unmatched_labels          2                           
+ 9 excluded_aggregate_labels 55                          
+10 source_conflicts          0                           
+11 problems                  0                           
+
+POR MODAL
+# A tibble: 4 × 4
+  access_mode  rows arrivals zero_imputed
+  <chr>       <int>    <dbl>        <int>
+1 air         21743 92068625          670
+2 fluvial     19818  1377439         1580
+3 land        20848 39771914          775
+4 maritime    20299  2037690         1462
+
+AUDITORIA MTUR APROVADA: 2000-01 a 2025-12, chaves únicas e valores válidos.
+
+Fim: 2026-08-31 22:18:13 -0300 

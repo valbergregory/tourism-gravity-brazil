@@ -1,0 +1,467 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-02 14:31:21 +0000 
+
+MESES ESPERADOS: 312 
+PERÍODO: 2000-01-01 a 2025-12-01 
+Os checkpoints válidos serão reutilizados.
+
+[001/312] 200001: checkpoint já validado.
+[002/312] 200002: checkpoint já validado.
+[003/312] 200003: tentativa 1 ... Unziping and reading data to memory.
+concluído; 31 mercados conectados.
+[004/312] 200004: checkpoint já validado.
+[005/312] 200005: checkpoint já validado.
+[006/312] 200006: tentativa 1 ... Unziping and reading data to memory.
+concluído; 30 mercados conectados.
+[007/312] 200007: checkpoint já validado.
+[008/312] 200008: checkpoint já validado.
+[009/312] 200009: checkpoint já validado.
+[010/312] 200010: checkpoint já validado.
+[011/312] 200011: checkpoint já validado.
+[012/312] 200012: tentativa 1 ... Unziping and reading data to memory.
+concluído; 30 mercados conectados.
+[013/312] 200101: tentativa 1 ... Unziping and reading data to memory.
+concluído; 30 mercados conectados.
+[014/312] 200102: tentativa 1 ... Unziping and reading data to memory.
+concluído; 32 mercados conectados.
+[015/312] 200103: tentativa 1 ... Unziping and reading data to memory.
+concluído; 32 mercados conectados.
+[016/312] 200104: checkpoint já validado.
+[017/312] 200105: checkpoint já validado.
+[018/312] 200106: checkpoint já validado.
+[019/312] 200107: checkpoint já validado.
+[020/312] 200108: checkpoint já validado.
+[021/312] 200109: checkpoint já validado.
+[022/312] 200110: checkpoint já validado.
+[023/312] 200111: tentativa 1 ... Unziping and reading data to memory.
+concluído; 28 mercados conectados.
+[024/312] 200112: tentativa 1 ... Unziping and reading data to memory.
+concluído; 29 mercados conectados.
+[025/312] 200201: tentativa 1 ... Unziping and reading data to memory.
+concluído; 31 mercados conectados.
+[026/312] 200202: tentativa 1 ... Unziping and reading data to memory.
+concluído; 35 mercados conectados.
+[027/312] 200203: tentativa 1 ... Unziping and reading data to memory.
+concluído; 31 mercados conectados.
+[028/312] 200204: checkpoint já validado.
+[029/312] 200205: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[030/312] 200206: tentativa 1 ... Unziping and reading data to memory.
+concluído; 31 mercados conectados.
+[031/312] 200207: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[032/312] 200208: tentativa 1 ... Unziping and reading data to memory.
+concluído; 32 mercados conectados.
+[033/312] 200209: checkpoint já validado.
+[034/312] 200210: tentativa 1 ... Unziping and reading data to memory.
+concluído; 31 mercados conectados.
+[035/312] 200211: tentativa 1 ... Unziping and reading data to memory.
+concluído; 32 mercados conectados.
+[036/312] 200212: tentativa 1 ... Unziping and reading data to memory.
+concluído; 33 mercados conectados.
+[037/312] 200301: checkpoint já validado.
+[038/312] 200302: checkpoint já validado.
+[039/312] 200303: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[040/312] 200304: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[041/312] 200305: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[042/312] 200306: tentativa 1 ... Unziping and reading data to memory.
+concluído; 35 mercados conectados.
+[043/312] 200307: checkpoint já validado.
+[044/312] 200308: tentativa 1 ... Unziping and reading data to memory.
+concluído; 36 mercados conectados.
+[045/312] 200309: checkpoint já validado.
+[046/312] 200310: checkpoint já validado.
+[047/312] 200311: tentativa 1 ... Unziping and reading data to memory.
+concluído; 33 mercados conectados.
+[048/312] 200312: checkpoint já validado.
+[049/312] 200401: checkpoint já validado.
+[050/312] 200402: checkpoint já validado.
+[051/312] 200403: checkpoint já validado.
+[052/312] 200404: checkpoint já validado.
+[053/312] 200405: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[054/312] 200406: checkpoint já validado.
+[055/312] 200407: checkpoint já validado.
+[056/312] 200408: checkpoint já validado.
+[057/312] 200409: checkpoint já validado.
+[058/312] 200410: checkpoint já validado.
+[059/312] 200411: checkpoint já validado.
+[060/312] 200412: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[061/312] 200501: checkpoint já validado.
+[062/312] 200502: checkpoint já validado.
+[063/312] 200503: tentativa 1 ... Unziping and reading data to memory.
+concluído; 33 mercados conectados.
+[064/312] 200504: tentativa 1 ... Unziping and reading data to memory.
+concluído; 35 mercados conectados.
+[065/312] 200505: checkpoint já validado.
+[066/312] 200506: checkpoint já validado.
+[067/312] 200507: checkpoint já validado.
+[068/312] 200508: checkpoint já validado.
+[069/312] 200509: checkpoint já validado.
+[070/312] 200510: checkpoint já validado.
+[071/312] 200511: checkpoint já validado.
+[072/312] 200512: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[073/312] 200601: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[074/312] 200602: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[075/312] 200603: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[076/312] 200604: checkpoint já validado.
+[077/312] 200605: checkpoint já validado.
+[078/312] 200606: checkpoint já validado.
+[079/312] 200607: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[080/312] 200608: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[081/312] 200609: checkpoint já validado.
+[082/312] 200610: checkpoint já validado.
+[083/312] 200611: checkpoint já validado.
+[084/312] 200612: checkpoint já validado.
+[085/312] 200701: checkpoint já validado.
+[086/312] 200702: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[087/312] 200703: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[088/312] 200704: tentativa 1 ... Unziping and reading data to memory.
+concluído; 36 mercados conectados.
+[089/312] 200705: checkpoint já validado.
+[090/312] 200706: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[091/312] 200707: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[092/312] 200708: tentativa 1 ... Unziping and reading data to memory.
+concluído; 30 mercados conectados.
+[093/312] 200709: checkpoint já validado.
+[094/312] 200710: checkpoint já validado.
+[095/312] 200711: checkpoint já validado.
+[096/312] 200712: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[097/312] 200801: tentativa 1 ... Unziping and reading data to memory.
+concluído; 37 mercados conectados.
+[098/312] 200802: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[099/312] 200803: checkpoint já validado.
+[100/312] 200804: checkpoint já validado.
+[101/312] 200805: tentativa 1 ... Unziping and reading data to memory.
+concluído; 35 mercados conectados.
+[102/312] 200806: tentativa 1 ... Unziping and reading data to memory.
+concluído; 33 mercados conectados.
+[103/312] 200807: tentativa 1 ... Unziping and reading data to memory.
+concluído; 36 mercados conectados.
+[104/312] 200808: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[105/312] 200809: checkpoint já validado.
+[106/312] 200810: checkpoint já validado.
+[107/312] 200811: checkpoint já validado.
+[108/312] 200812: tentativa 1 ... Unziping and reading data to memory.
+concluído; 35 mercados conectados.
+[109/312] 200901: tentativa 1 ... Unziping and reading data to memory.
+concluído; 35 mercados conectados.
+[110/312] 200902: tentativa 1 ... Unziping and reading data to memory.
+concluído; 33 mercados conectados.
+[111/312] 200903: checkpoint já validado.
+[112/312] 200904: checkpoint já validado.
+[113/312] 200905: checkpoint já validado.
+[114/312] 200906: checkpoint já validado.
+[115/312] 200907: checkpoint já validado.
+[116/312] 200908: checkpoint já validado.
+[117/312] 200909: checkpoint já validado.
+[118/312] 200910: checkpoint já validado.
+[119/312] 200911: checkpoint já validado.
+[120/312] 200912: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[121/312] 201001: tentativa 1 ... Unziping and reading data to memory.
+concluído; 37 mercados conectados.
+[122/312] 201002: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[123/312] 201003: checkpoint já validado.
+[124/312] 201004: checkpoint já validado.
+[125/312] 201005: checkpoint já validado.
+[126/312] 201006: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[127/312] 201007: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[128/312] 201008: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[129/312] 201009: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[130/312] 201010: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[131/312] 201011: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[132/312] 201012: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[133/312] 201101: tentativa 1 ... Unziping and reading data to memory.
+concluído; 44 mercados conectados.
+[134/312] 201102: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[135/312] 201103: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[136/312] 201104: checkpoint já validado.
+[137/312] 201105: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[138/312] 201106: checkpoint já validado.
+[139/312] 201107: checkpoint já validado.
+[140/312] 201108: checkpoint já validado.
+[141/312] 201109: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[142/312] 201110: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[143/312] 201111: checkpoint já validado.
+[144/312] 201112: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[145/312] 201201: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[146/312] 201202: tentativa 1 ... Unziping and reading data to memory.
+concluído; 37 mercados conectados.
+[147/312] 201203: checkpoint já validado.
+[148/312] 201204: tentativa 1 ... Unziping and reading data to memory.
+concluído; 37 mercados conectados.
+[149/312] 201205: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[150/312] 201206: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[151/312] 201207: checkpoint já validado.
+[152/312] 201208: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[153/312] 201209: checkpoint já validado.
+[154/312] 201210: checkpoint já validado.
+[155/312] 201211: checkpoint já validado.
+[156/312] 201212: checkpoint já validado.
+[157/312] 201301: checkpoint já validado.
+[158/312] 201302: checkpoint já validado.
+[159/312] 201303: tentativa 1 ... Unziping and reading data to memory.
+concluído; 36 mercados conectados.
+[160/312] 201304: checkpoint já validado.
+[161/312] 201305: checkpoint já validado.
+[162/312] 201306: checkpoint já validado.
+[163/312] 201307: checkpoint já validado.
+[164/312] 201308: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[165/312] 201309: checkpoint já validado.
+[166/312] 201310: checkpoint já validado.
+[167/312] 201311: checkpoint já validado.
+[168/312] 201312: checkpoint já validado.
+[169/312] 201401: checkpoint já validado.
+[170/312] 201402: checkpoint já validado.
+[171/312] 201403: checkpoint já validado.
+[172/312] 201404: checkpoint já validado.
+[173/312] 201405: checkpoint já validado.
+[174/312] 201406: tentativa 1 ... Unziping and reading data to memory.
+concluído; 48 mercados conectados.
+[175/312] 201407: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[176/312] 201408: checkpoint já validado.
+[177/312] 201409: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[178/312] 201410: checkpoint já validado.
+[179/312] 201411: checkpoint já validado.
+[180/312] 201412: checkpoint já validado.
+[181/312] 201501: checkpoint já validado.
+[182/312] 201502: checkpoint já validado.
+[183/312] 201503: checkpoint já validado.
+[184/312] 201504: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[185/312] 201505: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[186/312] 201506: checkpoint já validado.
+[187/312] 201507: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[188/312] 201508: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[189/312] 201509: checkpoint já validado.
+[190/312] 201510: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[191/312] 201511: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[192/312] 201512: checkpoint já validado.
+[193/312] 201601: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[194/312] 201602: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[195/312] 201603: checkpoint já validado.
+[196/312] 201604: checkpoint já validado.
+[197/312] 201605: checkpoint já validado.
+[198/312] 201606: checkpoint já validado.
+[199/312] 201607: checkpoint já validado.
+[200/312] 201608: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[201/312] 201609: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[202/312] 201610: checkpoint já validado.
+[203/312] 201611: checkpoint já validado.
+[204/312] 201612: tentativa 1 ... Unziping and reading data to memory.
+concluído; 44 mercados conectados.
+[205/312] 201701: checkpoint já validado.
+[206/312] 201702: checkpoint já validado.
+[207/312] 201703: checkpoint já validado.
+[208/312] 201704: checkpoint já validado.
+[209/312] 201705: checkpoint já validado.
+[210/312] 201706: checkpoint já validado.
+[211/312] 201707: checkpoint já validado.
+[212/312] 201708: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[213/312] 201709: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[214/312] 201710: checkpoint já validado.
+[215/312] 201711: checkpoint já validado.
+[216/312] 201712: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[217/312] 201801: checkpoint já validado.
+[218/312] 201802: checkpoint já validado.
+[219/312] 201803: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[220/312] 201804: checkpoint já validado.
+[221/312] 201805: checkpoint já validado.
+[222/312] 201806: checkpoint já validado.
+[223/312] 201807: checkpoint já validado.
+[224/312] 201808: checkpoint já validado.
+[225/312] 201809: checkpoint já validado.
+[226/312] 201810: checkpoint já validado.
+[227/312] 201811: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[228/312] 201812: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[229/312] 201901: checkpoint já validado.
+[230/312] 201902: checkpoint já validado.
+[231/312] 201903: checkpoint já validado.
+[232/312] 201904: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[233/312] 201905: checkpoint já validado.
+[234/312] 201906: checkpoint já validado.
+[235/312] 201907: checkpoint já validado.
+[236/312] 201908: checkpoint já validado.
+[237/312] 201909: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[238/312] 201910: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[239/312] 201911: checkpoint já validado.
+[240/312] 201912: checkpoint já validado.
+[241/312] 202001: checkpoint já validado.
+[242/312] 202002: checkpoint já validado.
+[243/312] 202003: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[244/312] 202004: tentativa 1 ... Unziping and reading data to memory.
+concluído; 34 mercados conectados.
+[245/312] 202005: checkpoint já validado.
+[246/312] 202006: tentativa 1 ... Unziping and reading data to memory.
+concluído; 36 mercados conectados.
+[247/312] 202007: checkpoint já validado.
+[248/312] 202008: checkpoint já validado.
+[249/312] 202009: checkpoint já validado.
+[250/312] 202010: checkpoint já validado.
+[251/312] 202011: checkpoint já validado.
+[252/312] 202012: checkpoint já validado.
+[253/312] 202101: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[254/312] 202102: tentativa 1 ... Unziping and reading data to memory.
+concluído; 36 mercados conectados.
+[255/312] 202103: tentativa 1 ... Unziping and reading data to memory.
+concluído; 37 mercados conectados.
+[256/312] 202104: checkpoint já validado.
+[257/312] 202105: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[258/312] 202106: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[259/312] 202107: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[260/312] 202108: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[261/312] 202109: tentativa 1 ... Unziping and reading data to memory.
+concluído; 46 mercados conectados.
+[262/312] 202110: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[263/312] 202111: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[264/312] 202112: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[265/312] 202201: tentativa 1 ... Unziping and reading data to memory.
+concluído; 38 mercados conectados.
+[266/312] 202202: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[267/312] 202203: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[268/312] 202204: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[269/312] 202205: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[270/312] 202206: checkpoint já validado.
+[271/312] 202207: checkpoint já validado.
+[272/312] 202208: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[273/312] 202209: checkpoint já validado.
+[274/312] 202210: checkpoint já validado.
+[275/312] 202211: tentativa 1 ... Unziping and reading data to memory.
+concluído; 41 mercados conectados.
+[276/312] 202212: checkpoint já validado.
+[277/312] 202301: checkpoint já validado.
+[278/312] 202302: checkpoint já validado.
+[279/312] 202303: checkpoint já validado.
+[280/312] 202304: tentativa 1 ... Unziping and reading data to memory.
+concluído; 40 mercados conectados.
+[281/312] 202305: checkpoint já validado.
+[282/312] 202306: checkpoint já validado.
+[283/312] 202307: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[284/312] 202308: checkpoint já validado.
+[285/312] 202309: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[286/312] 202310: checkpoint já validado.
+[287/312] 202311: checkpoint já validado.
+[288/312] 202312: tentativa 1 ... Unziping and reading data to memory.
+concluído; 48 mercados conectados.
+[289/312] 202401: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[290/312] 202402: checkpoint já validado.
+[291/312] 202403: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[292/312] 202404: checkpoint já validado.
+[293/312] 202405: checkpoint já validado.
+[294/312] 202406: checkpoint já validado.
+[295/312] 202407: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[296/312] 202408: tentativa 1 ... Unziping and reading data to memory.
+concluído; 39 mercados conectados.
+[297/312] 202409: tentativa 1 ... Unziping and reading data to memory.
+concluído; 46 mercados conectados.
+[298/312] 202410: tentativa 1 ... Unziping and reading data to memory.
+concluído; 42 mercados conectados.
+[299/312] 202411: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[300/312] 202412: checkpoint já validado.
+[301/312] 202501: checkpoint já validado.
+[302/312] 202502: checkpoint já validado.
+[303/312] 202503: checkpoint já validado.
+[304/312] 202504: tentativa 1 ... Unziping and reading data to memory.
+concluído; 44 mercados conectados.
+[305/312] 202505: checkpoint já validado.
+[306/312] 202506: tentativa 1 ... Unziping and reading data to memory.
+concluído; 49 mercados conectados.
+[307/312] 202507: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[308/312] 202508: tentativa 1 ... Unziping and reading data to memory.
+concluído; 45 mercados conectados.
+[309/312] 202509: tentativa 1 ... Unziping and reading data to memory.
+concluído; 43 mercados conectados.
+[310/312] 202510: checkpoint já validado.
+[311/312] 202511: checkpoint já validado.
+[312/312] 202512: checkpoint já validado.
+
+RESUMO DOS CHECKPOINTS
+Meses válidos: 312 de 312 
+
+DOWNLOAD E CONSOLIDAÇÃO ANAC CONCLUÍDOS
+Arquivo: D:/R - Projetos/tourism-gravity/r-project/data/raw/anac/anac_connectivity_monthly.csv 
+Linhas país-mês: 11730 
+Países/territórios: 118 
+Primeiro mês: 2000-01-01 
+Último mês: 2025-12-01 
+Meses: 312 
+
+Fim: 2026-09-02 14:48:15 +0000 

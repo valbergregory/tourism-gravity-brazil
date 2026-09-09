@@ -1,0 +1,15 @@
+variable,missing_rows,missing_share,affected_origins
+origin_gdp_pc,542,0.02491724898859875,10
+origin_population,452,0.020779698418536226,3
+origin_cpi,1139,0.052363001103346817,26
+origin_fx,196,0.00901066568591394,4
+origin_price_level_hh,1101,0.0506160353070982,28
+origin_price_level_gdp,638,0.029330636263332106,12
+brazil_cpi,0,0,0
+brazil_fx,0,0,0
+brazil_price_level_hh,0,0,0
+brazil_price_level_gdp,0,0,0
+relative_price_cpi,1139,0.052363001103346817,26
+relative_price_pli,1101,0.0506160353070982,28
+relative_price_gdp_pli,638,0.029330636263332106,12
+distance_km,102,0.0046892239794041925,9

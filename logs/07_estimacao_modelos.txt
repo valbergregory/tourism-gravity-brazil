@@ -1,0 +1,229 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-04 17:08:39 -0300 
+
+Congelando a amostra GDP-PLI/distw e estimando os modelos.
+Este script deve ser executado como um único Background Job.
+
+- The project is out-of-sync -- use `]8;;x-r-run:renv::status()renv::status()]8;;` for details.
+
+Anexando pacote: 'arrow'
+
+O seguinte objeto é mascarado por 'package:utils':
+
+    timestamp
+
+here() starts at D:/R - Projetos/tourism-gravity/r-project
+
+Anexando pacote: 'janitor'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    chisq.test, fisher.test
+
+
+Anexando pacote: 'lubridate'
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    duration
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    date, intersect, setdiff, union
+
+
+Anexando pacote: 'rlang'
+
+Os seguintes objetos são mascarados por 'package:jsonlite':
+
+    flatten, unbox
+
+O seguinte objeto é mascarado por 'package:arrow':
+
+    string
+
+
+Anexando pacote: 'scales'
+
+O seguinte objeto é mascarado por 'package:readr':
+
+    col_factor
+
+O seguinte objeto é mascarado por 'package:fixest':
+
+    pvalue
+
+
+Anexando pacote: 'dplyr'
+
+Os seguintes objetos são mascarados por 'package:stats':
+
+    filter, lag
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Anexando pacote: 'purrr'
+
+O seguinte objeto é mascarado por 'package:scales':
+
+    discard
+
+Os seguintes objetos são mascarados por 'package:rlang':
+
+    flatten, flatten_chr, flatten_dbl, flatten_int, flatten_lgl, flatten_raw, invoke, splice
+
+O seguinte objeto é mascarado por 'package:jsonlite':
+
+    flatten
+
+
+Anexando pacote: 'zoo'
+
+Os seguintes objetos são mascarados por 'package:base':
+
+    as.Date, as.Date.numeric
+
+✔ skipped pipeline [540ms, 14 skipped]
+Houve 22 avisos (use warnings() para vê-los)
+
+AMOSTRA CONGELADA
+# A tibble: 1 × 15
+  sample_flag     price_measure              distance_measure  rows origins
+  <chr>           <chr>                      <chr>            <int>   <int>
+1 sample_broad_5y log_relative_price_gdp_pli distw            19108      87
+  first_date last_date  zero_rows zero_share  arrivals
+  <date>     <date>         <int>      <dbl>     <dbl>
+1 2000-01-01 2025-12-01       144    0.00754 134240120
+  full_panel_arrival_coverage expected_rows expected_origins contract_configured
+                        <dbl>         <int>            <int> <lgl>              
+1                       0.992         19108               87 TRUE               
+  contract_ok
+  <lgl>      
+1 TRUE       
+
+MODELOS PRINCIPAIS
+# A tibble: 7 × 12
+  model                    estimator
+  <chr>                    <chr>    
+1 baseline_gdp_pli         PPML     
+2 direct_l1                PPML     
+3 seats_l1                 PPML     
+4 flights_l1               PPML     
+5 seats_ma3_l1             PPML     
+6 connectivity_combined_l1 PPML     
+7 gravity_distw_cre        PPML-CRE 
+  formula                                                                       
+  <chr>                                                                         
+1 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli |…
+2 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli +…
+3 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli +…
+4 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli +…
+5 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli +…
+6 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli +…
+7 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli +…
+  input_rows estimation_rows removed_rows separation_fe_levels_removed origins
+       <int>           <int>        <int>                        <int>   <int>
+1      19108           19108            0                            0      87
+2      19023           19023            0                            0      87
+3      19023           19023            0                            0      87
+4      19023           19023            0                            0      87
+5      18853           18853            0                            0      87
+6      19023           19023            0                            0      87
+7      19108           19108            0                            0      87
+  zero_rows converged collinear_variables warnings
+      <int> <lgl>     <chr>               <chr>   
+1       144 TRUE      ""                  ""      
+2       144 TRUE      ""                  ""      
+3       144 TRUE      ""                  ""      
+4       144 TRUE      ""                  ""      
+5       144 TRUE      ""                  ""      
+6       144 TRUE      ""                  ""      
+7       144 TRUE      ""                  ""      
+
+ROBUSTEZES
+# A tibble: 18 × 12
+   model                        estimator
+   <chr>                        <chr>    
+ 1 pre_covid                    PPML     
+ 2 post_reopening               PPML     
+ 3 exclude_pandemic             PPML     
+ 4 price_nonlinearity           PPML     
+ 5 post_reopening_interactions  PPML     
+ 6 balanced_core_2000           PPML     
+ 7 cpi_price                    PPML     
+ 8 household_pli_price          PPML     
+ 9 exclude_argentina            PPML     
+10 exclude_top_markets          PPML     
+11 contemporaneous_connectivity PPML     
+12 baseline_two_way_cluster     PPML     
+13 baseline_heteroskedastic     PPML     
+14 quarterly                    PPML     
+15 gravity_distcap_cre          PPML-CRE 
+16 gravity_simple_cre           PPML-CRE 
+17 air_access_mode              PPML     
+18 modal_panel                  PPML     
+   formula                                                                      
+   <chr>                                                                        
+ 1 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+ 2 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+ 3 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+ 4 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli_…
+ 5 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+ 6 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+ 7 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_cpi +   …
+ 8 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_pli +   …
+ 9 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+10 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+11 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+12 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+13 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+14 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+15 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+16 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+17 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+18 arrivals ~ log_gdp_pc_l1y + log_population_l1y + log_relative_price_gdp_pli …
+   input_rows estimation_rows removed_rows separation_fe_levels_removed origins
+        <int>           <int>        <int>                        <int>   <int>
+ 1      13221           13221            0                            0      87
+ 2       3976            3976            0                            0      85
+ 3      17197           17197            0                            0      87
+ 4      19108           19108            0                            0      87
+ 5      17197           17197            0                            0      87
+ 6      11973           11973            0                            0      39
+ 7      18652           18652            0                            0      85
+ 8      18702           18702            0                            0      86
+ 9      18712           18712            0                            0      86
+10      17468           17468            0                            0      82
+11      19108           19108            0                            0      87
+12      19108           19108            0                            0      87
+13      19108           19108            0                            0      87
+14       6371            6371            0                            0      87
+15      19108           19108            0                            0      87
+16      19108           19108            0                            0      87
+17      19021           19021            0                            0      87
+18      73109           72729          380                            5      87
+   zero_rows converged collinear_variables warnings
+       <int> <lgl>     <chr>               <chr>   
+ 1         0 TRUE      ""                  ""      
+ 2         0 TRUE      ""                  ""      
+ 3         0 TRUE      ""                  ""      
+ 4       144 TRUE      ""                  ""      
+ 5         0 TRUE      ""                  ""      
+ 6        24 TRUE      ""                  ""      
+ 7       144 TRUE      ""                  ""      
+ 8       144 TRUE      ""                  ""      
+ 9       144 TRUE      ""                  ""      
+10       144 TRUE      ""                  ""      
+11       144 TRUE      ""                  ""      
+12       144 TRUE      ""                  ""      
+13       144 TRUE      ""                  ""      
+14        17 TRUE      ""                  ""      
+15       144 TRUE      ""                  ""      
+16       144 TRUE      ""                  ""      
+17       175 TRUE      ""                  ""      
+18     17832 TRUE      ""                  ""      
+
+Fim: 2026-09-04 17:08:49 -0300 

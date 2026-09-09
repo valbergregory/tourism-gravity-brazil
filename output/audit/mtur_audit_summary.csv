@@ -1,0 +1,12 @@
+indicator,value
+rows,82708
+origins,199
+first_date,2000-01-01
+last_date,2025-12-01
+modes,"air, fluvial, land, maritime"
+observed_records,78221
+zero_imputed,4487
+unmatched_labels,2
+excluded_aggregate_labels,55
+source_conflicts,0
+problems,0

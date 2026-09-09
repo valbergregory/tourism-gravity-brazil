@@ -1,0 +1,131 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-03 12:41:30 -0300 
+
+wrote 2.15GB in  0s, 2.15GB/s                                                                        wrote 2.15GB in  0s, 2.15GB/s                                                                        wrote 2.15GB in  0s, 2.15GB/s                                                                        wrote 2.09kB in  0s, 302.57MB/s                                                                        wrote 2.15GB in  0s, 2.15GB/s                                                                        wrote 2.15GB in  0s, 2.15GB/s                                                                        AMOSTRAS E COBERTURA
+# A tibble: 4 × 23
+  sample       origins  rows  arrivals arrival_share
+  <chr>          <int> <int>     <dbl>         <dbl>
+1 core_2000         43 13416 131839682         0.975
+2 long_pre2009      53 15756 134080079         0.991
+3 broad_5y          89 20508 135218796         1.000
+4 full             199 21752 135255668         1    
+  baseline_complete_rows baseline_complete_origins
+                   <int>                     <int>
+1                  13104                        42
+2                  15444                        52
+3                  20040                        87
+4                  21210                       190
+  baseline_arrival_coverage gdp_pli_price_complete_rows
+                      <dbl>                       <int>
+1                     0.999                       12948
+2                     0.999                       15084
+3                     0.998                       19644
+4                     0.998                       20802
+  gdp_pli_price_complete_origins gdp_pli_price_arrival_coverage
+                           <int>                          <dbl>
+1                             42                          0.994
+2                             52                          0.993
+3                             87                          0.993
+4                            189                          0.993
+  cpi_price_complete_rows cpi_price_complete_origins
+                    <int>                      <int>
+1                   12588                         41
+2                   14712                         50
+3                   19272                         85
+4                   20279                        172
+  cpi_price_arrival_coverage pli_price_complete_rows
+                       <dbl>                   <int>
+1                      0.694                   12648
+2                      0.699                   14772
+3                      0.701                   19320
+4                      0.701                   20327
+  pli_price_complete_origins pli_price_arrival_coverage
+                       <int>                      <dbl>
+1                         42                      0.832
+2                         51                      0.834
+3                         86                      0.835
+4                        173                      0.835
+  gravity_complete_rows gravity_complete_origins
+                  <int>                    <int>
+1                 13104                       42
+2                 15444                       52
+3                 20040                       87
+4                 21138                      184
+  gdp_pli_gravity_complete_rows gdp_pli_gravity_complete_origins
+                          <int>                            <int>
+1                         12948                               42
+2                         15084                               52
+3                         19644                               87
+4                         20742                              184
+  cpi_gravity_complete_rows cpi_gravity_complete_origins
+                      <int>                        <int>
+1                     12588                           41
+2                     14712                           50
+3                     19272                           85
+4                     20231                          168
+
+VERIFICAÇÃO DOS TAMANHOS ESPERADOS
+# A tibble: 4 × 4
+  sample       expected_origins observed_origins matches_expected
+  <chr>                   <int>            <int> <lgl>           
+1 core_2000                  43               43 TRUE            
+2 long_pre2009               53               53 TRUE            
+3 broad_5y                   89               89 TRUE            
+4 full                      199              199 TRUE            
+
+DADOS AUSENTES NO PAINEL INTEGRAL
+# A tibble: 14 × 4
+   variable               missing_rows missing_share affected_origins
+   <chr>                         <int>         <dbl>            <int>
+ 1 origin_gdp_pc                   542       0.0249                10
+ 2 origin_population               452       0.0208                 3
+ 3 origin_cpi                     1139       0.0524                26
+ 4 origin_fx                       196       0.00901                4
+ 5 origin_price_level_hh          1101       0.0506                28
+ 6 origin_price_level_gdp          638       0.0293                12
+ 7 brazil_cpi                        0       0                      0
+ 8 brazil_fx                         0       0                      0
+ 9 brazil_price_level_hh             0       0                      0
+10 brazil_price_level_gdp            0       0                      0
+11 relative_price_cpi             1139       0.0524                26
+12 relative_price_pli             1101       0.0506                28
+13 relative_price_gdp_pli          638       0.0293                12
+14 distance_km                     102       0.00469                9
+
+MERCADOS CRÍTICOS PARA A COBERTURA
+# A tibble: 4 × 13
+  origin_iso3 total_arrivals  rows baseline_complete_rows
+  <chr>                <dbl> <int>                  <int>
+1 ARG               39389597   312                    312
+2 VEN                1304061   312                    312
+3 GUF                 195971   312                      0
+4 PRI                  21886   312                    312
+  gdp_pli_price_complete_rows cpi_price_complete_rows
+                        <int>                   <int>
+1                         312                       0
+2                         156                     108
+3                           0                       0
+4                         312                     312
+  pli_price_complete_rows cpi_interpolated_rows cpi_proxy_rows
+                    <int>                 <int>          <int>
+1                     132                     0              0
+2                      48                     0              0
+3                       0                     0            312
+4                     312                     0            312
+  fx_proxy_rows price_level_proxy_rows price_level_gdp_proxy_rows
+          <int>                  <int>                      <int>
+1             0                      0                          0
+2             0                      0                          0
+3           312                    312                        312
+4             0                    180                          0
+  price_proxy_iso3c
+  <chr>            
+1 <NA>             
+2 <NA>             
+3 FRA              
+4 USA              
+
+AUDITORIA DO PAINEL CONCLUÍDA
+As coberturas básica, GDP-PLI, CPI/câmbio e PLI domiciliar foram  auditadas separadamente.
+
+Fim: 2026-09-03 12:41:31 -0300 

@@ -1,0 +1,226 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-01 19:55:02 -0300 
+
+Baixando um único mês da ANAC para diagnóstico...
+Mês testado: janeiro de 2025
+
+Unziping and reading data to memory.
+
+RESUMO DO TESTE ANAC
+Linhas: 86361 
+Colunas: 111 
+Classes: data.table, data.frame 
+
+NOMES DAS COLUNAS
+  [1] "id_basica"                  "id_empresa"                
+  [3] "sg_empresa_icao"            "sg_empresa_iata"           
+  [5] "nm_empresa"                 "nm_pais"                   
+  [7] "ds_tipo_empresa"            "nr_voo"                    
+  [9] "nr_singular"                "id_di"                     
+ [11] "cd_di"                      "ds_di"                     
+ [13] "ds_grupo_di"                "dt_referencia"             
+ [15] "nr_ano_referencia"          "nr_semestre_referencia"    
+ [17] "nm_semestre_referencia"     "nr_trimestre_referencia"   
+ [19] "nm_trimestre_referencia"    "nr_mes_referencia"         
+ [21] "nm_mes_referencia"          "nr_semana_referencia"      
+ [23] "nm_dia_semana_referencia"   "nr_dia_referencia"         
+ [25] "nr_ano_mes_referencia"      "id_tipo_linha"             
+ [27] "cd_tipo_linha"              "ds_tipo_linha"             
+ [29] "ds_natureza_tipo_linha"     "ds_servico_tipo_linha"     
+ [31] "ds_natureza_etapa"          "hr_partida_real"           
+ [33] "dt_partida_real"            "nr_ano_partida_real"       
+ [35] "nr_semestre_partida_real"   "nm_semestre_partida_real"  
+ [37] "nr_trimestre_partida_real"  "nm_trimestre_partida_real" 
+ [39] "nr_mes_partida_real"        "nm_mes_partida_real"       
+ [41] "nr_semana_partida_real"     "nm_dia_semana_partida_real"
+ [43] "nr_dia_partida_real"        "nr_ano_mes_partida_real"   
+ [45] "id_aerodromo_origem"        "sg_icao_origem"            
+ [47] "sg_iata_origem"             "nm_aerodromo_origem"       
+ [49] "nm_municipio_origem"        "sg_uf_origem"              
+ [51] "nm_regiao_origem"           "nm_pais_origem"            
+ [53] "nm_continente_origem"       "nr_etapa"                  
+ [55] "hr_chegada_real"            "dt_chegada_real"           
+ [57] "nr_ano_chegada_real"        "nr_semestre_chegada_real"  
+ [59] "nm_semestre_chegada_real"   "nr_trimestre_chegada_real" 
+ [61] "nm_trimestre_chegada_real"  "nr_mes_chegada_real"       
+ [63] "nm_mes_chegada_real"        "nr_semana_chegada_real"    
+ [65] "nm_dia_semana_chegada_real" "nr_dia_chegada_real"       
+ [67] "nr_ano_mes_chegada_real"    "id_equipamento"            
+ [69] "sg_equipamento_icao"        "ds_modelo"                 
+ [71] "ds_matricula"               "id_aerodromo_destino"      
+ [73] "sg_icao_destino"            "sg_iata_destino"           
+ [75] "nm_aerodromo_destino"       "nm_municipio_destino"      
+ [77] "sg_uf_destino"              "nm_regiao_destino"         
+ [79] "nm_pais_destino"            "nm_continente_destino"     
+ [81] "nr_escala_destino"          "lt_combustivel"            
+ [83] "nr_assentos_ofertados"      "kg_payload"                
+ [85] "km_distancia"               "nr_passag_pagos"           
+ [87] "nr_passag_gratis"           "kg_bagagem_livre"          
+ [89] "kg_bagagem_excesso"         "kg_carga_paga"             
+ [91] "kg_carga_gratis"            "kg_correio"                
+ [93] "nr_decolagem"               "nr_horas_voadas"           
+ [95] "kg_peso"                    "nr_velocidade_media"       
+ [97] "nr_pax_gratis_km"           "nr_carga_paga_km"          
+ [99] "nr_carga_gratis_km"         "nr_correio_km"             
+[101] "nr_bagagem_paga_km"         "nr_bagagem_gratis_km"      
+[103] "nr_ask"                     "nr_rpk"                    
+[105] "nr_atk"                     "nr_rtk"                    
+[107] "id_arquivo"                 "nm_arquivo"                
+[109] "nr_linha"                   "dt_sistema"                
+[111] "nr_chave"                  
+
+PRIMEIRAS TRÊS LINHAS
+   id_basica id_empresa sg_empresa_icao sg_empresa_iata
+      <char>     <char>          <char>          <char>
+1:  34293968    1000854             GLO              G3
+2:  34255462    1001093             TAM              JJ
+3:  34293967    1000854             GLO              G3
+                                            nm_empresa nm_pais
+                                                <char>  <char>
+1: GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)  BRASIL
+2:                              TAM LINHAS AÉREAS S.A.  BRASIL
+3: GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)  BRASIL
+                                          ds_tipo_empresa nr_voo nr_singular
+                                                   <char>  <num>      <char>
+1: TRANSPORTE AÉREO NÃO REGULAR, TRANSPORTE AÉREO REGULAR   1430         450
+2:                               TRANSPORTE AÉREO REGULAR   3223         999
+3: TRANSPORTE AÉREO NÃO REGULAR, TRANSPORTE AÉREO REGULAR   1022         450
+    id_di  cd_di                      ds_di ds_grupo_di dt_referencia
+   <char> <char>                     <char>      <char>        <char>
+1:      2      0 REGULAR PREVISTO EM HOTRAN     REGULAR    2025-01-28
+2:      2      0 REGULAR PREVISTO EM HOTRAN     REGULAR    2025-01-03
+3:      2      0 REGULAR PREVISTO EM HOTRAN     REGULAR    2025-01-28
+   nr_ano_referencia nr_semestre_referencia nm_semestre_referencia
+               <num>                  <num>                 <char>
+1:              2025                      1            1º SEMESTRE
+2:              2025                      1            1º SEMESTRE
+3:              2025                      1            1º SEMESTRE
+   nr_trimestre_referencia nm_trimestre_referencia nr_mes_referencia
+                     <num>                  <char>             <num>
+1:                       1            1º TRIMESTRE                 1
+2:                       1            1º TRIMESTRE                 1
+3:                       1            1º TRIMESTRE                 1
+   nm_mes_referencia nr_semana_referencia nm_dia_semana_referencia
+              <char>                <num>                   <char>
+1:           JANEIRO                    5              TERÇA-FEIRA
+2:           JANEIRO                    1              SEXTA-FEIRA
+3:           JANEIRO                    5              TERÇA-FEIRA
+   nr_dia_referencia nr_ano_mes_referencia id_tipo_linha cd_tipo_linha
+               <num>                 <num>        <char>        <char>
+1:                28                202501             1             N
+2:                 3                202501             1             N
+3:                28                202501             1             N
+     ds_tipo_linha ds_natureza_tipo_linha ds_servico_tipo_linha
+            <char>                 <char>                <char>
+1: DOMÉSTICA MISTA              DOMÉSTICA            PASSAGEIRO
+2: DOMÉSTICA MISTA              DOMÉSTICA            PASSAGEIRO
+3: DOMÉSTICA MISTA              DOMÉSTICA            PASSAGEIRO
+   ds_natureza_etapa hr_partida_real dt_partida_real nr_ano_partida_real
+              <char>          <char>          <char>               <num>
+1:         DOMÉSTICA        06:25:00      2025-01-28                2025
+2:         DOMÉSTICA        10:55:00      2025-01-03                2025
+3:         DOMÉSTICA        12:00:00      2025-01-28                2025
+   nr_semestre_partida_real nm_semestre_partida_real nr_trimestre_partida_real
+                      <num>                   <char>                     <num>
+1:                        1              1º SEMESTRE                         1
+2:                        1              1º SEMESTRE                         1
+3:                        1              1º SEMESTRE                         1
+   nm_trimestre_partida_real nr_mes_partida_real nm_mes_partida_real
+                      <char>               <num>              <char>
+1:              1º TRIMESTRE                   1             JANEIRO
+2:              1º TRIMESTRE                   1             JANEIRO
+3:              1º TRIMESTRE                   1             JANEIRO
+   nr_semana_partida_real nm_dia_semana_partida_real nr_dia_partida_real
+                    <num>                     <char>               <num>
+1:                      5                TERÇA-FEIRA                  28
+2:                      1                SEXTA-FEIRA                   3
+3:                      5                TERÇA-FEIRA                  28
+   nr_ano_mes_partida_real id_aerodromo_origem sg_icao_origem sg_iata_origem
+                     <num>              <char>         <char>         <char>
+1:                  202501                 698           SBSP            CGH
+2:                  202501                  38           SBAR            AJU
+3:                  202501                 698           SBSP            CGH
+   nm_aerodromo_origem nm_municipio_origem sg_uf_origem nm_regiao_origem
+                <char>              <char>       <char>           <char>
+1:           CONGONHAS           SÃO PAULO           SP          SUDESTE
+2:         SANTA MARIA             ARACAJU           SE         NORDESTE
+3:           CONGONHAS           SÃO PAULO           SP          SUDESTE
+   nm_pais_origem nm_continente_origem nr_etapa hr_chegada_real dt_chegada_real
+           <char>               <char>    <num>          <char>          <char>
+1:         BRASIL       AMÉRICA DO SUL        1        08:18:00      2025-01-28
+2:         BRASIL       AMÉRICA DO SUL        1        13:43:00      2025-01-03
+3:         BRASIL       AMÉRICA DO SUL        1        12:54:00      2025-01-28
+   nr_ano_chegada_real nr_semestre_chegada_real nm_semestre_chegada_real
+                 <num>                    <num>                   <char>
+1:                2025                        1              1º SEMESTRE
+2:                2025                        1              1º SEMESTRE
+3:                2025                        1              1º SEMESTRE
+   nr_trimestre_chegada_real nm_trimestre_chegada_real nr_mes_chegada_real
+                       <num>                    <char>               <num>
+1:                         1              1º TRIMESTRE                   1
+2:                         1              1º TRIMESTRE                   1
+3:                         1              1º TRIMESTRE                   1
+   nm_mes_chegada_real nr_semana_chegada_real nm_dia_semana_chegada_real
+                <char>                  <num>                     <char>
+1:             JANEIRO                      5                TERÇA-FEIRA
+2:             JANEIRO                      1                SEXTA-FEIRA
+3:             JANEIRO                      5                TERÇA-FEIRA
+   nr_dia_chegada_real nr_ano_mes_chegada_real id_equipamento
+                 <num>                   <num>         <char>
+1:                  28                  202501            101
+2:                   3                  202501            508
+3:                  28                  202501            101
+   sg_equipamento_icao      ds_modelo ds_matricula id_aerodromo_destino
+                <char>         <char>       <char>               <char>
+1:                B738 BOEING 737-800         VBF                   122
+2:                A20N AIRBUS A320NEO         XBQ                   301
+3:                B738 BOEING 737-800         GXP                   628
+   sg_icao_destino sg_iata_destino                        nm_aerodromo_destino
+            <char>          <char>                                      <char>
+1:            SBBR             BSB             PRESIDENTE JUSCELINO KUBITSCHEK
+2:            SBGR             GRU GUARULHOS - GOVERNADOR ANDRÉ FRANCO MONTORO
+3:            SBRJ             SDU                               SANTOS DUMONT
+   nm_municipio_destino sg_uf_destino nm_regiao_destino nm_pais_destino
+                 <char>        <char>            <char>          <char>
+1:             BRASÍLIA            DF      CENTRO-OESTE          BRASIL
+2:            GUARULHOS            SP           SUDESTE          BRASIL
+3:       RIO DE JANEIRO            RJ           SUDESTE          BRASIL
+   nm_continente_destino nr_escala_destino lt_combustivel nr_assentos_ofertados
+                  <char>             <num>         <char>                 <num>
+1:        AMÉRICA DO SUL                NA           4598                   186
+2:        AMÉRICA DO SUL                NA           7616                   172
+3:        AMÉRICA DO SUL                NA           1912                   153
+   kg_payload km_distancia nr_passag_pagos nr_passag_gratis kg_bagagem_livre
+       <char>       <char>           <num>            <num>           <char>
+1:      19800          872             159                9              996
+2:      18146         1705             146                1             1426
+3:      19800          366              95                2              406
+   kg_bagagem_excesso kg_carga_paga kg_carga_gratis kg_correio nr_decolagem
+               <char>        <char>          <char>     <char>        <num>
+1:                  3          1751               2          0            1
+2:                  0             0               0          0            1
+3:                  0             0               0          0            1
+   nr_horas_voadas kg_peso nr_velocidade_media nr_pax_gratis_km
+             <num>  <char>               <num>            <num>
+1:         1.88333   15352              463.19             7848
+2:         2.80000   12451              609.05             1705
+3:         0.90000    7681              406.30              732
+   nr_carga_paga_km nr_carga_gratis_km nr_correio_km nr_bagagem_paga_km
+              <num>              <num>         <num>              <num>
+1:          1526872               1744             0               2616
+2:                0                  0             0                  0
+3:                0                  0             0                  0
+   nr_bagagem_gratis_km nr_ask nr_rpk nr_atk nr_rtk id_arquivo    nm_arquivo
+                  <num>  <num>  <num>  <num>  <num>     <char>        <char>
+1:               868512 162192 138648  17265  12796      20463 GLO202501.zip
+2:              2431330 293260 248930  30938  21101      20451 TAM202501.txt
+3:               148596  55998  34770   7246   2756      20463 GLO202501.zip
+   nr_linha                 dt_sistema     nr_chave
+      <num>                     <char>        <num>
+1:    56563 2025-02-25 01:00:44.563796 1.000854e+24
+2:     5007  2025-02-14 01:00:28.66411 1.001093e+24
+3:    55966 2025-02-25 01:00:44.563796 1.000854e+24
+
+TESTE ANAC CONCLUÍDO
+
+Fim: 2026-09-01 19:55:11 -0300 

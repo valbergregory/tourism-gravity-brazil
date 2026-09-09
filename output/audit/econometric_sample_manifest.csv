@@ -1,0 +1,2 @@
+sample_flag,price_measure,distance_measure,rows,origins,first_date,last_date,zero_rows,zero_share,arrivals,full_panel_arrival_coverage,expected_rows,expected_origins,contract_configured,contract_ok,frozen_at_utc,sample_file,sample_md5
+sample_broad_5y,log_relative_price_gdp_pli,distw,19108,87,2000-01-01,2025-12-01,144,0.007536110529621101,134240120,0.9924916418290137,19108,87,TRUE,TRUE,2026-09-04 00:51:16 UTC,D:/R - Projetos/tourism-gravity/r-project/data/processed/econometric_sample_gdp_pli_distw.parquet,283e067884d15d0371141a98ca5df020

@@ -1,0 +1,5 @@
+sample,expected_origins,observed_origins,matches_expected
+core_2000,43,43,TRUE
+long_pre2009,53,53,TRUE
+broad_5y,89,89,TRUE
+full,199,199,TRUE

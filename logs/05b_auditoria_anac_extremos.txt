@@ -1,0 +1,121 @@
+Projeto: D:/R - Projetos/tourism-gravity/r-project 
+Início: 2026-09-01 20:01:17 -0300 
+
+
+Baixando e processando: 200001 
+Unziping and reading data to memory.
+Linhas brutas: 71023 
+Etapas internacionais agregadas: 83 
+Países estrangeiros: 30 
+Códigos ISO3 identificados: 10 
+Países sem código ISO3: 58 
+
+Baixando e processando: 202501 
+Unziping and reading data to memory.
+Linhas brutas: 86361 
+Etapas internacionais agregadas: 97 
+Países estrangeiros: 45 
+Códigos ISO3 identificados: 16 
+Países sem código ISO3: 62 
+
+PAÍSES SEM CORRESPONDÊNCIA ISO3
+# A tibble: 32 × 1
+   foreign_country          
+   <chr>                    
+ 1 ALEMANHA                 
+ 2 BOLÍVIA                  
+ 3 BULGÁRIA                 
+ 4 BÉLGICA                  
+ 5 CANADÁ                   
+ 6 COLÔMBIA                 
+ 7 EMIRADOS ÁRABES UNIDOS   
+ 8 EQUADOR                  
+ 9 ESPANHA                  
+10 ESTADOS UNIDOS DA AMÉRICA
+11 ETIÓPIA                  
+12 FRANÇA                   
+13 GANA                     
+14 GUIANA                   
+15 HOLANDA                  
+16 ILHAS CANÁRIAS           
+17 ITÁLIA                   
+18 JAPÃO                    
+19 MARTINICA                
+20 MÉXICO                   
+21 NICARÁGUA                
+22 NIGÉRIA                  
+23 PANAMÁ                   
+24 PARAGUAI                 
+25 PORTO RICO               
+26 REINO UNIDO              
+27 REPÚBLICA DOMINICANA     
+28 SUÍÇA                    
+29 TUNÍSIA                  
+30 TURQUIA                  
+31 URUGUAI                  
+32 ÁFRICA DO SUL            
+
+RESUMO POR MÊS E DIREÇÃO
+# A tibble: 11 × 6
+   date       direction countries flights   seats passengers
+   <date>     <chr>         <int>   <dbl>   <dbl>      <dbl>
+ 1 2000-01-01 inbound          10    3035  563050     376937
+ 2 2000-01-01 outbound          9    3079  572352     401634
+ 3 2000-02-01 inbound           1       2     248        170
+ 4 2000-02-01 outbound          3      23    5148       3493
+ 5 2024-12-01 outbound          1       2     547        380
+ 6 2025-01-01 inbound          16    7414 1617391    1409106
+ 7 2025-01-01 outbound         14    7418 1616894    1363670
+ 8 2025-02-01 inbound           1       5     954        902
+ 9 2025-02-01 outbound          3      11    2865       2317
+10 NA         inbound           1       4       0          0
+11 NA         outbound          1       9       0        240
+
+PRINCIPAIS MERCADOS DE ENTRADA
+# A tibble: 40 × 7
+   origin_iso3 foreign_country    date       direction flights  seats passengers
+   <chr>       <chr>              <date>     <chr>       <dbl>  <dbl>      <dbl>
+ 1 <NA>        ESTADOS UNIDOS DA… 2000-01-01 inbound       769 166942     100036
+ 2 ARG         ARGENTINA          2000-01-01 inbound       864 127279      93978
+ 3 <NA>        ESPANHA            2000-01-01 inbound       143  33799      19178
+ 4 <NA>        FRANÇA             2000-01-01 inbound       105  26555      18157
+ 5 PRT         PORTUGAL           2000-01-01 inbound       119  26092      14714
+ 6 CHL         CHILE              2000-01-01 inbound       149  26081      20546
+ 7 <NA>        ALEMANHA           2000-01-01 inbound        88  24266      17947
+ 8 <NA>        URUGUAI            2000-01-01 inbound       190  21730      17838
+ 9 <NA>        REINO UNIDO        2000-01-01 inbound        52  17212      11397
+10 <NA>        ITÁLIA             2000-01-01 inbound        73  16049      11450
+11 <NA>        PARAGUAI           2000-01-01 inbound       101  14382       8806
+12 <NA>        SUÍÇA              2000-01-01 inbound        42  10780       8470
+13 <NA>        BOLÍVIA            2000-01-01 inbound        66   8875       7221
+14 <NA>        HOLANDA            2000-01-01 inbound        25   7513       6288
+15 <NA>        MÉXICO             2000-01-01 inbound        29   5321       3529
+16 <NA>        ESPANHA            2000-02-01 inbound         1    218        162
+17 FRA         GUIANA FRANCESA    2000-02-01 inbound         1     30          8
+18 ARG         ARGENTINA          2025-01-01 inbound      1743 330380     304165
+19 <NA>        ESTADOS UNIDOS DA… 2025-01-01 inbound      1273 268423     231118
+20 CHL         CHILE              2025-01-01 inbound      1041 217426     190639
+21 PRT         PORTUGAL           2025-01-01 inbound       500 141106     115556
+22 <NA>        PANAMÁ             2025-01-01 inbound       405  68382      56980
+23 <NA>        FRANÇA             2025-01-01 inbound       203  63494      56089
+24 <NA>        ESPANHA            2025-01-01 inbound       187  58117      51820
+25 <NA>        ITÁLIA             2025-01-01 inbound       146  54228      42453
+26 <NA>        URUGUAI            2025-01-01 inbound       272  50597      43921
+27 <NA>        COLÔMBIA           2025-01-01 inbound       247  45990      36650
+28 PER         PERU               2025-01-01 inbound       220  41339      37344
+29 <NA>        REINO UNIDO        2025-01-01 inbound       106  36016      32297
+30 <NA>        ALEMANHA           2025-01-01 inbound       112  34546      30721
+31 <NA>        EMIRADOS ÁRABES U… 2025-01-01 inbound        53  22794      20077
+32 <NA>        HOLANDA            2025-01-01 inbound        61  20360      17740
+33 ARG         ARGENTINA          2025-02-01 inbound         1    329        286
+34 <NA>        ESTADOS UNIDOS DA… 2025-02-01 inbound         1    272        271
+35 <NA>        COLÔMBIA           2025-02-01 inbound         1    177        174
+36 <NA>        REPÚBLICA DOMINIC… 2025-02-01 inbound         1    176        171
+37 <NA>        PARAGUAI           2025-02-01 inbound         1      0          0
+38 PRT         PORTUGAL           NA         inbound         2      0          0
+39 <NA>        BÉLGICA            NA         inbound         1      0          0
+40 <NA>        ESPANHA            NA         inbound         1      0          0
+
+AUDITORIA DOS MESES EXTREMOS CONCLUÍDA
+
+Fim: 2026-09-01 20:01:31 -0300 
