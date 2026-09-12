@@ -145,16 +145,225 @@ tourism_coefficient_map <- function() {
   )
 }
 
-write_model_table <- function(models, path, coef_map, notes) {
-  modelsummary::modelsummary(
-    models,
-    output = path,
+# Publication labels for model columns. Keys are the internal identifiers used
+# in main_results$models / robustness_results$models and in every CSV export
+# (model_specifications.csv, coefficient_estimates.csv, audits). Values are
+# presentation-only labels: short, English, and free of LaTeX special
+# characters, because write_model_table() renders with escape = FALSE.
+tourism_model_labels <- function() {
+  c(
+    baseline_gdp_pli = "Baseline",
+    direct_l1 = "Direct service",
+    seats_l1 = "Seats",
+    flights_l1 = "Flights",
+    seats_ma3_l1 = "Seats, 3-month mean",
+    connectivity_combined_l1 = "Combined connectivity",
+    gravity_distw_cre = "Gravity CRE",
+    pre_covid = "Pre-pandemic",
+    post_reopening = "Post-reopening",
+    exclude_pandemic = "Excluding pandemic",
+    price_nonlinearity = "Nonlinear price",
+    post_reopening_interactions = "Post-reopening slopes",
+    balanced_core_2000 = "Balanced core 2000",
+    cpi_price = "CPI price",
+    household_pli_price = "Household PLI price",
+    exclude_argentina = "Excluding Argentina",
+    exclude_top_markets = "Excluding top markets",
+    contemporaneous_connectivity = "Contemporaneous connectivity",
+    baseline_two_way_cluster = "Two-way cluster",
+    baseline_heteroskedastic = "Heteroskedastic SE",
+    quarterly = "Quarterly",
+    gravity_distcap_cre = "Gravity CRE, capital distance",
+    gravity_simple_cre = "Gravity CRE, simple distance",
+    air_access_mode = "Air arrivals",
+    modal_panel = "Modal panel"
+  )
+}
+
+# Builds "(k) Label" column headers for a named list of models. `offset` keeps
+# the specification numbering continuous across the panels of one table. Aborts
+# when a model has no publication label, so raw identifiers never reach LaTeX.
+publication_model_names <- function(models, labels = tourism_model_labels(),
+                                    offset = 0L) {
+  ids <- names(models)
+  if (is.null(ids) || any(is.na(ids)) || any(!nzchar(ids))) {
+    stop("Every model passed to write_model_table() must be named.")
+  }
+  unknown <- setdiff(ids, names(labels))
+  if (length(unknown) > 0L) {
+    stop(
+      "No publication label for model(s): ", paste(unknown, collapse = ", "),
+      ". Add them to tourism_model_labels() before exporting tables."
+    )
+  }
+  label <- unname(labels[ids])
+  if (any(grepl("[_$%&#^\\{}~]", label))) {
+    stop("Publication labels must not contain LaTeX special characters.")
+  }
+  sprintf("(%d) %s", seq_along(ids) + as.integer(offset), label)
+}
+
+# Panel layout of the two tables that enter the manuscript. Each panel becomes
+# one ordinary LaTeX float, at most four models wide, so that it fits the text
+# width in portrait without shrinking the font. Panels after the first carry
+# \ContinuedFloat, which keeps every panel of a table under a single table
+# number. `models` are internal identifiers; column headers come from
+# tourism_model_labels() and their numbering runs across panels (main 1-7,
+# robustness 1-6).
+tourism_table_panels <- function() {
+  list(
+    main_models = list(
+      list(
+        models = c("baseline_gdp_pli", "direct_l1", "seats_l1", "flights_l1"),
+        title = "Main PPML estimates. Panel A: Core determinants",
+        label = "tab:main-models",
+        rowsep = "1pt"
+      ),
+      list(
+        models = c(
+          "seats_ma3_l1", "connectivity_combined_l1", "gravity_distw_cre"
+        ),
+        title = paste(
+          "Main PPML estimates (continued).",
+          "Panel B: Connectivity and gravity extensions"
+        ),
+        label = "tab:main-models-panel-b",
+        # This panel carries the gravity and Mundlak rows and is the tallest of
+        # the four; the tighter row separation keeps it inside a single page.
+        rowsep = "0.5pt"
+      )
+    ),
+    robustness_models = list(
+      list(
+        models = c("pre_covid", "post_reopening", "exclude_pandemic"),
+        title = "Robustness checks. Panel A: Period and disruption checks",
+        label = "tab:robustness-models",
+        rowsep = "1pt"
+      ),
+      list(
+        models = c(
+          "balanced_core_2000", "exclude_argentina", "exclude_top_markets"
+        ),
+        title = paste(
+          "Robustness checks (continued).",
+          "Panel B: Sample composition checks"
+        ),
+        label = "tab:robustness-models-panel-b",
+        rowsep = "1pt"
+      )
+    )
+  )
+}
+
+# Notes reach tinytable as one methodological paragraph. Passing a character
+# vector makes modelsummary key each note by a run of blank spaces, which
+# tabularray collapses, so only the first and last notes survive in LaTeX.
+collapse_table_notes <- function(notes) {
+  notes <- as.character(unlist(notes, use.names = FALSE))
+  notes <- notes[nzchar(trimws(notes))]
+  if (length(notes) == 0L) return(NULL)
+  paste(trimws(notes), collapse = " ")
+}
+
+modelsummary_arguments <- function(coef_map, notes) {
+  list(
     coef_rename = coef_map,
     stars = TRUE,
     gof_omit = "IC|Log|RMSE|Std.Errors|FE",
-    notes = notes,
+    notes = collapse_table_notes(notes),
     escape = FALSE
   )
+}
+
+# One panel rendered as an ordinary table float, at the publication font size.
+# tinytable writes the float and the tabularray body; the caption and the label
+# are injected as genuine LaTeX commands because \ContinuedFloat only continues
+# the numbering of captions issued by \caption, not of the caption= key that
+# tabularray keeps inside the table body. Only the rendering copy is renamed;
+# `models` keeps the internal identifiers.
+render_panel_float <- function(models, panel, offset, coef_map, notes,
+                               continued) {
+  panel_models <- models[panel$models]
+  names(panel_models) <- publication_model_names(panel_models, offset = offset)
+  table <- do.call(
+    modelsummary::modelsummary,
+    c(
+      list(panel_models, output = "latex"),
+      modelsummary_arguments(coef_map, notes)
+    )
+  )
+  table <- tinytable::style_tt(table, fontsize = 0.9)
+  table <- tinytable::theme_latex(
+    table,
+    inner = paste0(
+      "width=\\linewidth, rowsep=", panel$rowsep %||% "1pt",
+      ", colspec={X[l,2.4]",
+      paste(rep("X[c]", length(panel$models)), collapse = ""), "}"
+    )
+  )
+  lines <- strsplit(tinytable::save_tt(table, "latex"), "\n", fixed = TRUE)[[1]]
+  anchor <- which(trimws(lines) == "\\centering")[1]
+  if (is.na(anchor)) {
+    stop("The rendered float has no \\centering anchor to caption.")
+  }
+  append(
+    lines,
+    c(
+      if (isTRUE(continued)) "\\ContinuedFloat",
+      paste0("\\caption{", panel$title, "}"),
+      paste0("\\label{", panel$label, "}")
+    ),
+    after = anchor
+  )
+}
+
+# Every panel of one table, as consecutive floats in a single .tex file.
+build_panel_floats <- function(models, panels, coef_map, notes) {
+  ids <- names(models)
+  panel_models <- lapply(panels, function(panel) panel$models)
+  assigned <- unlist(panel_models, use.names = FALSE)
+  if (anyDuplicated(assigned) > 0L) {
+    stop("A model is assigned to more than one panel: ",
+         paste(assigned[duplicated(assigned)], collapse = ", "))
+  }
+  missing_models <- setdiff(assigned, ids)
+  if (length(missing_models) > 0L) {
+    stop("Panel layout references models that are not supplied: ",
+         paste(missing_models, collapse = ", "))
+  }
+  unassigned <- setdiff(ids, assigned)
+  if (length(unassigned) > 0L) {
+    stop("Models without a panel would be dropped from the table: ",
+         paste(unassigned, collapse = ", "))
+  }
+  if (any(lengths(panel_models) > 4L)) {
+    stop("Each panel may hold at most four models side by side.")
+  }
+  offsets <- cumsum(c(0L, head(lengths(panel_models), -1L)))
+  floats <- Map(
+    function(panel, offset, index) {
+      render_panel_float(models, panel, offset, coef_map, notes, index > 1L)
+    },
+    panels, offsets, seq_along(panels)
+  )
+  unlist(lapply(floats, function(float) c(float, "")), use.names = FALSE)
+}
+
+write_model_table <- function(models, path, coef_map, notes, panels = NULL) {
+  panelled_latex <- !is.null(panels) &&
+    identical(tolower(tools::file_ext(path)), "tex")
+  if (panelled_latex) {
+    writeLines(build_panel_floats(models, panels, coef_map, notes), path)
+  } else {
+    # Rename only a rendering copy; `models` and every downstream CSV keep the
+    # internal identifiers.
+    rendered <- models
+    names(rendered) <- publication_model_names(models)
+    do.call(
+      modelsummary::modelsummary,
+      c(list(rendered, output = path), modelsummary_arguments(coef_map, notes))
+    )
+  }
   normalizePath(path, winslash = "/", mustWork = TRUE)
 }
 
@@ -243,17 +452,20 @@ export_model_outputs <- function(main_results, robustness_results,
     "Unless explicitly labeled otherwise, standard errors are clustered by origin."
   )
 
+  table_panels <- tourism_table_panels()
   main_tex <- write_model_table(
     main_results$models,
     fs::path(tables_dir, "main_models.tex"),
     coef_map,
-    main_notes
+    main_notes,
+    panels = table_panels$main_models
   )
   main_html <- write_model_table(
     main_results$models,
     fs::path(tables_dir, "main_models.html"),
     coef_map,
-    main_notes
+    main_notes,
+    panels = table_panels$main_models
   )
 
   robustness_periods <- robustness_results$models[c(
@@ -264,7 +476,8 @@ export_model_outputs <- function(main_results, robustness_results,
     robustness_periods,
     fs::path(tables_dir, "robustness_models.tex"),
     coef_map,
-    robust_notes
+    robust_notes,
+    panels = table_panels$robustness_models
   )
   robust_html <- write_model_table(
     robustness_results$models,

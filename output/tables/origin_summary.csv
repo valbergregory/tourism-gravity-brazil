@@ -1,0 +1,200 @@
+origin_iso3,origin_country,origin_region,first_month,last_month,months,observed_months,total_arrivals,zero_share
+ARG,Argentina,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,39389597,0
+USA,United States,North America,2000-01-01,2025-12-01,312,312,15412855,0
+PRY,Paraguay,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,7240865,0
+URY,Uruguay,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,7071447,0
+CHL,Chile,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,7046997,0
+DEU,Germany,Europe & Central Asia,2000-01-01,2025-12-01,312,312,5827043,0
+FRA,France,Europe & Central Asia,2000-01-01,2025-12-01,312,312,5558801,0
+ITA,Italy,Europe & Central Asia,2000-01-01,2025-12-01,312,312,5200246,0
+PRT,Portugal,Europe & Central Asia,2000-01-01,2025-12-01,312,312,4998243,0
+GBR,United Kingdom,Europe & Central Asia,2000-01-01,2025-12-01,312,312,3939841,0
+ESP,Spain,Europe & Central Asia,2000-01-01,2025-12-01,312,312,3770077,0
+BOL,Bolivia,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,2432516,0
+COL,Colombia,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,2322518,0
+PER,Peru,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,2218875,0
+MEX,Mexico,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,1796232,0
+NLD,Netherlands,Europe & Central Asia,2000-01-01,2025-12-01,312,312,1691569,0
+CAN,Canada,North America,2000-01-01,2025-12-01,312,312,1691279,0
+CHE,Switzerland,Europe & Central Asia,2000-01-01,2025-12-01,312,312,1674365,0
+JPN,Japan,East Asia & Pacific,2000-01-01,2025-12-01,312,312,1526310,0
+VEN,"Venezuela, RB",Latin America & Caribbean,2000-01-01,2025-12-01,312,312,1304061,0
+CHN,China,East Asia & Pacific,2000-01-01,2025-12-01,312,312,1031739,0.00641025641025641
+AUS,Australia,East Asia & Pacific,2000-01-01,2025-12-01,312,312,909335,0
+KOR,"Korea, Rep.",East Asia & Pacific,2000-01-01,2025-12-01,312,312,792098,0
+SWE,Sweden,Europe & Central Asia,2000-01-01,2025-12-01,312,312,762065,0
+ISR,Israel,"Middle East, North Africa, Afghanistan & Pakistan",2000-01-01,2025-12-01,312,312,733446,0.003205128205128205
+BEL,Belgium,Europe & Central Asia,2000-01-01,2025-12-01,312,312,721324,0
+ECU,Ecuador,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,652827,0.003205128205128205
+AGO,Angola,Sub-Saharan Africa,2000-01-01,2025-12-01,312,312,567523,0.00641025641025641
+AUT,Austria,Europe & Central Asia,2000-01-01,2025-12-01,312,312,551339,0.003205128205128205
+NOR,Norway,Europe & Central Asia,2000-01-01,2025-12-01,312,312,545912,0
+ZAF,South Africa,Sub-Saharan Africa,2000-01-01,2025-12-01,312,312,544871,0
+DNK,Denmark,Europe & Central Asia,2000-01-01,2025-12-01,312,312,488014,0.003205128205128205
+IRL,Ireland,Europe & Central Asia,2005-01-01,2025-12-01,252,252,453276,0
+POL,Poland,Europe & Central Asia,2005-01-01,2025-12-01,252,252,391045,0
+RUS,Russian Federation,Europe & Central Asia,2008-01-01,2025-12-01,216,216,385506,0
+IND,India,South Asia,2008-01-01,2025-12-01,216,216,296336,0
+CRI,Costa Rica,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,253557,0.003205128205128205
+FIN,Finland,Europe & Central Asia,2005-01-01,2025-12-01,252,252,229643,0.011904761904761904
+PAN,Panama,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,212818,0.009615384615384616
+NZL,New Zealand,East Asia & Pacific,2000-01-01,2025-12-01,312,312,211508,0.00641025641025641
+GRC,Greece,Europe & Central Asia,2000-01-01,2025-12-01,312,312,205503,0
+GUF,,,2000-01-01,2025-12-01,312,291,195971,0.2268041237113402
+TUR,Turkiye,Europe & Central Asia,2015-01-01,2025-12-01,132,132,142020,0.007575757575757576
+HUN,Hungary,Europe & Central Asia,2005-01-01,2025-12-01,252,252,129989,0.007936507936507936
+SUR,Suriname,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,127864,0.009615384615384616
+GUY,Guyana,Latin America & Caribbean,2000-01-01,2025-12-01,312,312,115508,0.009615384615384616
+CZE,Czechia,Europe & Central Asia,2008-01-01,2025-12-01,216,216,112447,0.013888888888888888
+GTM,Guatemala,Latin America & Caribbean,2008-01-01,2025-12-01,216,216,104287,0.009259259259259259
+CUB,Cuba,Latin America & Caribbean,2008-01-01,2025-12-01,216,216,76086,0.009259259259259259
+ROU,Romania,Europe & Central Asia,2015-01-01,2025-12-01,132,132,76002,0.007575757575757576
+DOM,Dominican Republic,Latin America & Caribbean,2015-01-01,2025-12-01,132,132,65991,0.015151515151515152
+CPV,Cabo Verde,Sub-Saharan Africa,2005-01-01,2025-12-01,252,252,61782,0.011904761904761904
+NGA,Nigeria,Sub-Saharan Africa,2000-01-01,2025-12-01,312,312,60635,0.01282051282051282
+PHL,Philippines,East Asia & Pacific,2015-01-01,2025-12-01,132,132,57257,0.015151515151515152
+UKR,Ukraine,Europe & Central Asia,2015-01-01,2025-12-01,132,132,51790,0.007575757575757576
+TWN,,,2015-01-01,2025-12-01,132,132,46370,0.030303030303030304
+MAR,Morocco,"Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,44817,0.030303030303030304
+SGP,Singapore,East Asia & Pacific,2015-01-01,2025-12-01,132,132,43354,0.015151515151515152
+MOZ,Mozambique,Sub-Saharan Africa,2015-01-01,2025-12-01,132,132,38875,0.030303030303030304
+THA,Thailand,East Asia & Pacific,2015-01-01,2025-12-01,132,132,34553,0.015151515151515152
+MYS,Malaysia,East Asia & Pacific,2015-01-01,2025-12-01,132,132,33953,0.007575757575757576
+BGR,Bulgaria,Europe & Central Asia,2015-01-01,2025-12-01,132,132,32726,0.007575757575757576
+SLV,El Salvador,Latin America & Caribbean,2015-01-01,2025-12-01,132,132,32490,0.015151515151515152
+HKG,"Hong Kong SAR, China",East Asia & Pacific,2015-01-01,2025-12-01,132,132,32223,0.045454545454545456
+IDN,Indonesia,East Asia & Pacific,2015-01-01,2025-12-01,132,132,30806,0.015151515151515152
+IRN,"Iran, Islamic Rep.","Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,28325,0.015151515151515152
+SVK,Slovak Republic,Europe & Central Asia,2015-01-01,2025-12-01,132,132,28312,0.015151515151515152
+HND,Honduras,Latin America & Caribbean,2015-01-01,2025-12-01,132,132,27194,0.022727272727272728
+HRV,Croatia,Europe & Central Asia,2015-01-01,2025-12-01,132,132,27154,0.022727272727272728
+LBN,Lebanon,"Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,26981,0.015151515151515152
+SRB,Serbia,Europe & Central Asia,2015-01-01,2025-12-01,132,132,24107,0.015151515151515152
+LTU,Lithuania,Europe & Central Asia,2015-01-01,2025-12-01,132,132,21924,0.015151515151515152
+PRI,Puerto Rico (US),Latin America & Caribbean,2000-01-01,2025-12-01,312,88,21886,0
+SVN,Slovenia,Europe & Central Asia,2015-01-01,2025-12-01,132,132,20713,0.022727272727272728
+EGY,"Egypt, Arab Rep.","Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,19931,0.022727272727272728
+SAU,Saudi Arabia,"Middle East, North Africa, Afghanistan & Pakistan",2000-01-01,2025-12-01,312,216,18789,0.023148148148148147
+LUX,Luxembourg,Europe & Central Asia,2015-01-01,2025-12-01,132,132,18623,0.030303030303030304
+TUN,Tunisia,"Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,16252,0.030303030303030304
+EST,Estonia,Europe & Central Asia,2015-01-01,2025-12-01,132,132,14519,0.022727272727272728
+NIC,Nicaragua,Latin America & Caribbean,2015-01-01,2025-12-01,132,132,14261,0.030303030303030304
+SYR,Syrian Arab Republic,"Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,13657,0.022727272727272728
+LVA,Latvia,Europe & Central Asia,2015-01-01,2025-12-01,132,132,12824,0.015151515151515152
+HTI,Haiti,Latin America & Caribbean,2015-01-01,2025-12-01,132,132,12536,0.022727272727272728
+PAK,Pakistan,"Middle East, North Africa, Afghanistan & Pakistan",2015-01-01,2025-12-01,132,132,12132,0.015151515151515152
+TTO,Trinidad and Tobago,Latin America & Caribbean,2015-01-01,2025-12-01,132,132,10879,0.03787878787878788
+KEN,Kenya,Sub-Saharan Africa,2015-01-01,2025-12-01,132,132,9072,0.05303030303030303
+GHA,Ghana,Sub-Saharan Africa,2015-01-01,2025-12-01,132,132,8437,0.03787878787878788
+BGD,Bangladesh,South Asia,2015-01-01,2025-12-01,132,132,7657,0.05303030303030303
+ARE,United Arab Emirates,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,2880,0
+KAZ,Kazakhstan,Europe & Central Asia,2025-01-01,2025-12-01,12,12,2051,0
+JAM,Jamaica,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,1497,0
+IRQ,Iraq,"Middle East, North Africa, Afghanistan & Pakistan",2000-01-01,2025-12-01,312,96,1413,0
+BLR,Belarus,Europe & Central Asia,2025-01-01,2025-12-01,12,12,1333,0
+QAT,Qatar,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,1152,0
+COG,"Congo, Rep.",Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,1128,0
+MLT,Malta,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,1115,0
+VNM,Viet Nam,East Asia & Pacific,2025-01-01,2025-12-01,12,12,1081,0
+ARM,Armenia,Europe & Central Asia,2025-01-01,2025-12-01,12,12,1025,0
+CYP,Cyprus,Europe & Central Asia,2025-01-01,2025-12-01,12,12,861,0
+GEO,Georgia,Europe & Central Asia,2025-01-01,2025-12-01,12,12,854,0
+ISL,Iceland,Europe & Central Asia,2025-01-01,2025-12-01,12,12,847,0
+ALB,Albania,Europe & Central Asia,2025-01-01,2025-12-01,12,12,833,0
+CMR,Cameroon,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,805,0
+COD,"Congo, Dem. Rep.",Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,794,0
+ETH,Ethiopia,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,741,0
+UZB,Uzbekistan,Europe & Central Asia,2025-01-01,2025-12-01,12,12,665,0
+ZWE,Zimbabwe,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,616,0
+JOR,Jordan,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,555,0
+TZA,Tanzania,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,555,0
+UGA,Uganda,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,531,0
+DZA,Algeria,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,515,0
+MKD,North Macedonia,Europe & Central Asia,2025-01-01,2025-12-01,12,12,502,0
+BIH,Bosnia and Herzegovina,Europe & Central Asia,2025-01-01,2025-12-01,12,12,464,0
+NAM,Namibia,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,433,0
+PSE,West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,433,0
+BHS,"Bahamas, The",Latin America & Caribbean,2025-01-01,2025-12-01,12,12,427,0
+GIN,Guinea,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,425,0
+AZE,Azerbaijan,Europe & Central Asia,2025-01-01,2025-12-01,12,12,424,0
+SEN,Senegal,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,421,0
+CIV,Cote d'Ivoire,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,396,0
+NPL,Nepal,South Asia,2025-01-01,2025-12-01,12,12,389,0
+BEN,Benin,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,360,0
+GNB,Guinea-Bissau,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,346,0
+DMA,Dominica,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,344,0
+BRB,Barbados,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,329,0
+MNG,Mongolia,East Asia & Pacific,2025-01-01,2025-12-01,12,12,306,0
+KNA,St. Kitts and Nevis,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,304,0
+MNE,Montenegro,Europe & Central Asia,2025-01-01,2025-12-01,12,12,292,0
+TGO,Togo,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,292,0
+MRT,Mauritania,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,286,0
+BLZ,Belize,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,283,0
+ZMB,Zambia,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,272,0
+MDA,Moldova,Europe & Central Asia,2025-01-01,2025-12-01,12,12,265,0
+AND,Andorra,Europe & Central Asia,2025-01-01,2025-12-01,12,12,245,0
+SDN,Sudan,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,244,0
+KWT,Kuwait,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,242,0
+LKA,Sri Lanka,South Asia,2025-01-01,2025-12-01,12,12,234,0
+MAC,"Macao SAR, China",East Asia & Pacific,2025-01-01,2025-12-01,12,12,217,0
+OMN,Oman,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,214,0
+YEM,"Yemen, Rep.","Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,201,0
+BFA,Burkina Faso,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,200,0
+LBY,Libya,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,196,0
+BWA,Botswana,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,194,0
+MUS,Mauritius,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,193,0
+MWI,Malawi,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,190,0
+GRD,Grenada,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,177,0
+LIE,Liechtenstein,Europe & Central Asia,2025-01-01,2025-12-01,12,12,172,0
+AFG,Afghanistan,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,170,0
+MLI,Mali,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,170,0
+LCA,St. Lucia,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,164,0
+ATG,Antigua and Barbuda,Latin America & Caribbean,2025-01-01,2025-12-01,12,12,152,0
+STP,Sao Tome and Principe,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,152,0
+FJI,Fiji,East Asia & Pacific,2025-01-01,2025-12-01,12,12,151,0
+RWA,Rwanda,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,150,0
+GMB,"Gambia, The",Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,131,0
+MDG,Madagascar,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,131,0
+KGZ,Kyrgyz Republic,Europe & Central Asia,2025-01-01,2025-12-01,12,11,121,0
+SLE,Sierra Leone,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,120,0
+TCD,Chad,Sub-Saharan Africa,2025-01-01,2025-11-01,11,5,119,0
+BHR,Bahrain,"Middle East, North Africa, Afghanistan & Pakistan",2025-01-01,2025-12-01,12,12,100,0
+GAB,Gabon,Sub-Saharan Africa,2025-01-01,2025-12-01,12,12,99,0
+KHM,Cambodia,East Asia & Pacific,2025-01-01,2025-12-01,12,12,95,0
+LBR,Liberia,Sub-Saharan Africa,2025-01-01,2025-12-01,12,11,88,0
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa,2025-01-01,2025-12-01,12,11,85,0
+MCO,Monaco,Europe & Central Asia,2025-01-01,2025-12-01,12,12,84,0
+BDI,Burundi,Sub-Saharan Africa,2025-01-01,2025-12-01,12,11,82,0
+TLS,Timor-Leste,East Asia & Pacific,2025-01-01,2025-12-01,12,12,78,0
+MMR,Myanmar,East Asia & Pacific,2025-01-01,2025-11-01,11,11,73,0
+SMR,San Marino,Europe & Central Asia,2025-01-01,2025-12-01,12,11,73,0
+PNG,Papua New Guinea,East Asia & Pacific,2025-01-01,2025-11-01,11,9,72,0
+BTN,Bhutan,South Asia,2025-01-01,2025-12-01,12,11,63,0
+LSO,Lesotho,Sub-Saharan Africa,2025-03-01,2025-12-01,10,9,63,0
+SWZ,Eswatini,Sub-Saharan Africa,2025-03-01,2025-11-01,9,9,57,0
+GNQ,Equatorial Guinea,Sub-Saharan Africa,2025-01-01,2025-12-01,12,9,50,0
+VUT,Vanuatu,East Asia & Pacific,2025-02-01,2025-12-01,11,7,46,0
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean,2025-02-01,2025-12-01,11,11,44,0
+LAO,Lao PDR,East Asia & Pacific,2025-03-01,2025-11-01,9,7,42,0
+SSD,South Sudan,Sub-Saharan Africa,2025-02-01,2025-11-01,10,7,41,0
+CAF,Central African Republic,Sub-Saharan Africa,2025-01-01,2025-12-01,12,11,38,0
+TJK,Tajikistan,Europe & Central Asia,2025-02-01,2025-12-01,11,7,37,0
+SYC,Seychelles,Sub-Saharan Africa,2025-01-01,2025-12-01,12,8,35,0
+COM,Comoros,Sub-Saharan Africa,2025-03-01,2025-11-01,9,6,32,0
+SLB,Solomon Islands,East Asia & Pacific,2025-04-01,2025-11-01,8,5,31,0
+TKM,Turkmenistan,Europe & Central Asia,2025-01-01,2025-12-01,12,8,31,0
+MDV,Maldives,South Asia,2025-01-01,2025-11-01,11,9,30,0
+NER,Niger,Sub-Saharan Africa,2025-03-01,2025-12-01,10,9,29,0
+TUV,Tuvalu,East Asia & Pacific,2025-04-01,2025-11-01,8,4,29,0
+WSM,Samoa,East Asia & Pacific,2025-01-01,2025-12-01,12,8,27,0
+BRN,Brunei Darussalam,East Asia & Pacific,2025-03-01,2025-12-01,10,6,24,0
+PLW,Palau,East Asia & Pacific,2025-05-01,2025-11-01,7,2,19,0
+ERI,Eritrea,Sub-Saharan Africa,2025-01-01,2025-12-01,12,7,17,0
+TON,Tonga,East Asia & Pacific,2025-03-01,2025-11-01,9,4,15,0
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,2025-05-01,2025-11-01,7,2,14,0
+KIR,Kiribati,East Asia & Pacific,2025-04-01,2025-11-01,8,2,13,0
+DJI,Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",2025-04-01,2025-11-01,8,3,12,0
+MHL,Marshall Islands,East Asia & Pacific,2025-11-01,2025-11-01,1,1,12,0
+VAT,,,2025-04-01,2025-11-01,8,4,7,0
+PRK,"Korea, Dem. People's Rep.",East Asia & Pacific,2025-03-01,2025-10-01,8,4,6,0
+NRU,Naoero,East Asia & Pacific,2025-04-01,2025-11-01,8,2,2,0
