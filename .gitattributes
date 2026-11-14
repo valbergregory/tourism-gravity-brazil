@@ -1,0 +1,2 @@
+# Tabelas HTML geradas pelo pipeline: fora das estatísticas de linguagem do GitHub
+output/tables/*.html linguist-generated=true
